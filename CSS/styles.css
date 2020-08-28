@@ -38,55 +38,40 @@ a:hover {
 
 .hero {
   min-height: 100vh;
-}
-
-.container {
-  width: 80vw !important;
-  max-width: 1920px;
-}
-
-.container .hero-container {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  height: 100vh;
 }
 
-.container .hero-container .hero-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.container .hero-container .hero-wrapper div {
+.container .hero-wrapper div {
   padding: 15px;
 }
 
-.container .hero-container .hero-wrapper .short-bio h1 {
+.container .hero-wrapper .short-bio h1 {
   font-size: 66px;
   font-weight: 600;
 }
 
-.container .hero-container .hero-wrapper .experience-wrapper {
+.container .hero-wrapper .experience-wrapper {
   width: 100%;
   height: 500px;
   overflow: scroll;
 }
 
-.container .hero-container .hero-wrapper .experience-wrapper::-webkit-scrollbar {
+.container .hero-wrapper .experience-wrapper::-webkit-scrollbar {
   width: 0px;
   background: transparent;
   /* make scrollbar transparent */
 }
 
-.container .hero-container .hero-wrapper .experience-wrapper .xp-project-wrapper .card-xp {
+.container .hero-wrapper .experience-wrapper .xp-project-wrapper .card-xp {
   padding: 35px;
   background-color: var(--cardsBackground);
   margin: 5px;
   border-radius: 5px;
 }
 
-.container .hero-container .hero-wrapper .experience-wrapper .xp-project-wrapper .card-xp:hover {
+.container .hero-wrapper .experience-wrapper .xp-project-wrapper .card-xp:hover {
   background-color: white;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
@@ -94,19 +79,30 @@ a:hover {
   margin-right: -8px;
 }
 
-.container .hero-container .hero-wrapper .experience-wrapper .xp-project-wrapper .card-xp:hover p {
+.container .hero-wrapper .experience-wrapper .xp-project-wrapper .card-xp:hover p {
   color: black;
 }
 
-.container .hero-container .hero-wrapper .experience-wrapper .xp-project-wrapper .card-xp:hover span {
+.container .hero-wrapper .experience-wrapper .xp-project-wrapper .card-xp:hover span {
   color: black;
 }
 
-.container .hero-container .hero-wrapper .experience-wrapper .xp-project-wrapper .card-xp:hover a {
+.container .hero-wrapper .experience-wrapper .xp-project-wrapper .card-xp:hover a {
   color: black !important;
 }
 
-.container .hero-container .hero-wrapper .experience-wrapper .xp-desgin-wrapper .card-xp {
+.container .hero-wrapper .experience-wrapper .xp-desgin-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  margin-top: 15px;
+}
+
+.container .hero-wrapper .experience-wrapper .xp-desgin-wrapper .card-xp {
   padding: 35px;
   background-color: #202022;
   margin: 5px;
@@ -150,17 +146,10 @@ a:hover {
 }
 
 .sub-hero-section .w-row .basic-column .tag-wrapper .card {
-  position: relative;
   height: 340px;
   padding: 30px;
   border-radius: 8px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
-  background-image: linear-gradient(180deg, #000, #000);
-  -webkit-transition: box-shadow 400ms ease;
-  -webkit-transition: -webkit-box-shadow 400ms ease;
-  transition: -webkit-box-shadow 400ms ease;
-  transition: box-shadow 400ms ease;
-  transition: box-shadow 400ms ease, -webkit-box-shadow 400ms ease;
+  background-color: transparent;
 }
 
 .sub-hero-section .w-row .basic-column .tag-wrapper .tagline.white-hero-tagline {
@@ -216,11 +205,6 @@ a:hover {
   float: none;
   border-radius: 4px;
   background-color: #1991eb;
-  -webkit-transition: color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
-  -webkit-transition: color 200ms ease, background-color 200ms ease, -webkit-box-shadow 200ms ease;
-  transition: color 200ms ease, background-color 200ms ease, -webkit-box-shadow 200ms ease;
-  transition: color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
-  transition: color 200ms ease, box-shadow 200ms ease, background-color 200ms ease, -webkit-box-shadow 200ms ease;
   color: #fff;
   line-height: 22px;
 }
@@ -256,5 +240,17 @@ a:hover {
 
 .sub-hero-section .w-row .w-col-6 {
   width: 50%;
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .container .hero-wrapper .experience-wrapper {
+    margin-top: 30px;
+  }
+  .container .hero-wrapper .experience-wrapper .xp-project-wrapper {
+    padding: 0;
+  }
+  .container .hero-wrapper .experience-wrapper .xp-desgin-wrapper {
+    display: initial;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
