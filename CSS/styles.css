@@ -27,6 +27,19 @@ li {
   font-weight: 300;
 }
 
+a {
+  color: #00ffff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #008080;
+}
+
+.hero {
+  min-height: 100vh;
+}
+
 .container {
   width: 80vw !important;
   max-width: 1920px;
@@ -75,7 +88,6 @@ li {
 
 .container .hero-container .hero-wrapper .experience-wrapper .xp-project-wrapper .card-xp:hover {
   background-color: white;
-  color: black !important;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
   margin-left: -8px;
@@ -90,9 +102,159 @@ li {
   color: black;
 }
 
+.container .hero-container .hero-wrapper .experience-wrapper .xp-project-wrapper .card-xp:hover a {
+  color: black !important;
+}
+
 .container .hero-container .hero-wrapper .experience-wrapper .xp-desgin-wrapper .card-xp {
   padding: 35px;
   background-color: #202022;
   margin: 5px;
+}
+
+.sub-hero-section {
+  min-height: 100vh;
+  background-color: #7a7a7a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+}
+
+.sub-hero-section h1,
+.sub-hero-section h2,
+.sub-hero-section h3,
+.sub-hero-section h4,
+.sub-hero-section h5,
+.sub-hero-section h6 {
+  font-family: var(--body-fonts);
+  color: #000;
+}
+
+.sub-hero-section .w-row .basic-column {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.sub-hero-section .w-row .basic-column .tag-wrapper {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.sub-hero-section .w-row .basic-column .tag-wrapper .card {
+  position: relative;
+  height: 340px;
+  padding: 30px;
+  border-radius: 8px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
+  background-image: linear-gradient(180deg, #000, #000);
+  -webkit-transition: box-shadow 400ms ease;
+  -webkit-transition: -webkit-box-shadow 400ms ease;
+  transition: -webkit-box-shadow 400ms ease;
+  transition: box-shadow 400ms ease;
+  transition: box-shadow 400ms ease, -webkit-box-shadow 400ms ease;
+}
+
+.sub-hero-section .w-row .basic-column .tag-wrapper .tagline.white-hero-tagline {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.sub-hero-section .w-row .basic-column .tag-wrapper .tagline {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sub-hero-section .w-row .basic-column .tag-wrapper .card-headline {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.sub-hero-section .w-row .basic-column .tag-wrapper h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.sub-hero-section .w-row .basic-column .tag-wrapper .button.default-button.card-cta {
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+  display: block;
+}
+
+.sub-hero-section .w-row .basic-column .tag-wrapper .button.default-button {
+  -ms-flex-align: end;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  background-color: #fff;
+  -webkit-transition: color 200ms ease, background-color 200ms ease, box-shadow 200ms ease;
+  -webkit-transition: color 200ms ease, background-color 200ms ease, -webkit-box-shadow 200ms ease;
+  transition: color 200ms ease, background-color 200ms ease, -webkit-box-shadow 200ms ease;
+  transition: color 200ms ease, background-color 200ms ease, box-shadow 200ms ease;
+  transition: color 200ms ease, background-color 200ms ease, box-shadow 200ms ease, -webkit-box-shadow 200ms ease;
+  color: #5b697a;
+}
+
+.sub-hero-section .w-row .basic-column .tag-wrapper .button {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 9px 25px;
+  float: none;
+  border-radius: 4px;
+  background-color: #1991eb;
+  -webkit-transition: color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+  -webkit-transition: color 200ms ease, background-color 200ms ease, -webkit-box-shadow 200ms ease;
+  transition: color 200ms ease, background-color 200ms ease, -webkit-box-shadow 200ms ease;
+  transition: color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+  transition: color 200ms ease, box-shadow 200ms ease, background-color 200ms ease, -webkit-box-shadow 200ms ease;
+  color: #fff;
+  line-height: 22px;
+}
+
+.sub-hero-section .w-row .basic-column .tag-wrapper .card.card1-content {
+  position: relative;
+  background-image: url("https://bit.ly/34GIdHi");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.sub-hero-section .w-row .basic-column .tag-wrapper .card.card2-content {
+  background-image: url("https://bit.ly/2EIMf6M");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.sub-hero-section .w-row .basic-column .tag-wrapper .card.card3-content {
+  background-image: url("https://bit.ly/2QubyMv");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.sub-hero-section .w-row .w-col {
+  position: relative;
+  float: left;
+  min-height: 1px;
+}
+
+.sub-hero-section .w-row .w-col-3 {
+  width: 25%;
+}
+
+.sub-hero-section .w-row .w-col-6 {
+  width: 50%;
 }
 /*# sourceMappingURL=styles.css.map */
