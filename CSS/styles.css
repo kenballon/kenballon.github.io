@@ -242,7 +242,31 @@ a:hover {
   width: 50%;
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-width: 300px) and (max-width: 374px) {
+  .container .hero-wrapper .experience-wrapper {
+    margin-top: 30px;
+  }
+  .container .hero-wrapper .experience-wrapper .xp-project-wrapper {
+    padding: 0;
+  }
+  .container .hero-wrapper .experience-wrapper .xp-desgin-wrapper {
+    display: initial;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 413px) {
+  .container .hero-wrapper .experience-wrapper {
+    margin-top: 30px;
+  }
+  .container .hero-wrapper .experience-wrapper .xp-project-wrapper {
+    padding: 0;
+  }
+  .container .hero-wrapper .experience-wrapper .xp-desgin-wrapper {
+    display: initial;
+  }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 812px) {
   .container .hero-wrapper .experience-wrapper {
     margin-top: 30px;
   }
