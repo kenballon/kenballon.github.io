@@ -73,7 +73,7 @@ li {
 h1{
     color:#303030;
 }
-h3{
+h1, h2, h3,h4{
     color:#3d3d3d;
 }
 
@@ -130,6 +130,31 @@ a {
                 float: right;
                 width: 418px;                
                 object-fit: cover;
+            }
+        }
+    }
+}
+
+.hero.services{
+    padding-top: 80px;
+    align-items: baseline;
+    h2{
+        font-size:50px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    h4{
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    .about-p{
+        margin-bottom: 30px;
+    }
+    .hero-wrapper{
+        .hero-img-wrapper {
+            img{
+                object-fit: contain;
             }
         }
     }

@@ -75,7 +75,7 @@ h1 {
   color: #303030;
 }
 
-h3 {
+h1, h2, h3, h4 {
   color: #3d3d3d;
 }
 
@@ -143,6 +143,34 @@ a:hover {
   width: 418px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.hero.services {
+  padding-top: 80px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.hero.services h2 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.hero.services h4 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.hero.services .about-p {
+  margin-bottom: 30px;
+}
+
+.hero.services .hero-wrapper .hero-img-wrapper img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .sub-hero-section {
