@@ -1,30 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
+@import url("https://rsms.me/inter/inter-ui.css");
 
-:root {
-    --body-fonts: "Poppins", sans-serif;
-    --mainbody: #151515;
-    --cardsBackground: #202022;
-}
+$font-family-light: "Poppins", Arial, sans-serif;
+$font-family-medium: "Eina03 Medium", "Poppins", Arial, sans-serif;
+$font-family-bold: "Eina03 Bold", "Poppins", Arial, sans-serif;
 
 *,
 *::before,
-*::after {
+*::after,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: var(--body-fonts);
-    background-color: var(--mainbody);
     h1,
     h2,
     h3,
     h4,
     h5,
-    h6 {
-        font-family: var(--body-fonts);
-        color: #fff;
+    h6,
+    p,
+    span,
+    li {
+        font-family: $font-family-light;
     }
     border: 20px solid transparent;
     &::before,
@@ -44,6 +51,11 @@ body {
         will-change: border-color;
         transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1),
             border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
+    }
+
+    p {
+        color: #192735;
+        font-size: 1em;
     }
 }
 
@@ -68,76 +80,40 @@ a {
     }
 }
 
+.btn-primary{
+    font-family: $font-family-light;
+}
+
 .hero {
     min-height: 100vh;
     display: grid;
     place-items: center;
-}
-
-.container {
     .hero-wrapper {
-        div {
-            padding: 15px;
-        }
+        align-items: center;
 
-        .short-bio {
+        .hero-text-wrapper {
             h1 {
-                font-size: 66px;
-                font-weight: 600;
+                font-weight: 700;
+                font-size: 4.25em;
+                
             }
-            .projects {
-                ol {
-                    list-style-type: none;
-                }
+            h3{
+                line-height: 1.5em;
+                margin-bottom: 0.5em;
             }
+            .about-p {
+                font-size: 1.188em;
+                line-height: 1.875em;
+                font-weight: 400;
+                margin-bottom: 1em;
+            }
+           
         }
-
-        .experience-wrapper {
-            width: 100%;
-            height: 500px;
-            overflow: scroll;
-
-            &::-webkit-scrollbar {
-                width: 0px;
-                background: transparent; /* make scrollbar transparent */
-            }
-
-            .xp-project-wrapper {
-                .card-xp {
-                    padding: 35px;
-                    background-color: var(--cardsBackground);
-                    margin: 5px;
-                    border-radius: 5px;
-
-                    &:hover {
-                        background-color: white;
-                        cursor: pointer;
-                        transition: ease-in-out 0.3s;
-                        margin-left: -8px;
-                        margin-right: -8px;
-
-                        p {
-                            color: black;
-                        }
-                        span {
-                            color: black;
-                        }
-                        a {
-                            color: black !important;
-                        }
-                    }
-                }
-            }
-            .xp-desgin-wrapper {
-                display: grid;
-                justify-content: space-between;
-                grid-template-columns: repeat(2, auto);
-                margin-top: 15px;
-                .card-xp {
-                    padding: 35px;
-                    background-color: #202022;
-                    margin: 5px;
-                }
+        .hero-img-wrapper {
+            padding-left: 140px;
+            img {
+                width: 100%;
+                object-fit: cover;
             }
         }
     }
@@ -150,7 +126,6 @@ a {
     h4,
     h5,
     h6 {
-        font-family: var(--body-fonts);
         color: #000;
     }
 
@@ -177,9 +152,11 @@ a {
                     border-radius: 8px;
                     background-color: transparent;
                     border: 0;
-                    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-                        0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-                        0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+                    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048);
+                    &:hover {
+                        box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                            0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+                    }
                 }
                 .tagline.white-hero-tagline {
                     margin-bottom: 10px;
@@ -262,55 +239,16 @@ a {
 }
 
 @media only screen and (min-width: 300px) and (max-width: 374px) {
-    .container {
-        .hero-wrapper {
-            .experience-wrapper {
-                margin-top: 30px;
-                .xp-project-wrapper {
-                    padding: 0;
-                }
-                .xp-desgin-wrapper {
-                    display: initial;
-                }
-            }
-        }
-    }
     .sub-hero-section {
         padding: 10px;
     }
 }
 @media only screen and (min-width: 375px) and (max-width: 413px) {
-    .container {
-        .hero-wrapper {
-            .experience-wrapper {
-                margin-top: 30px;
-                .xp-project-wrapper {
-                    padding: 0;
-                }
-                .xp-desgin-wrapper {
-                    display: initial;
-                }
-            }
-        }
-    }
     .sub-hero-section {
         padding: 10px;
     }
 }
 @media only screen and (min-width: 414px) and (max-width: 812px) {
-    .container {
-        .hero-wrapper {
-            .experience-wrapper {
-                margin-top: 30px;
-                .xp-project-wrapper {
-                    padding: 0;
-                }
-                .xp-desgin-wrapper {
-                    display: initial;
-                }
-            }
-        }
-    }
     .sub-hero-section {
         padding: 10px;
     }
