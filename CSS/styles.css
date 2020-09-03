@@ -114,6 +114,19 @@ a:hover {
   margin-bottom: 1em;
 }
 
+.hero .hero-wrapper .hero-text-wrapper .btn-primary {
+  padding: 15px 40px;
+  background-color: transparent;
+  color: #008080;
+  border-color: #008080;
+}
+
+.hero .hero-wrapper .hero-text-wrapper .btn-primary:hover {
+  background-color: #008080;
+  color: #fff;
+  border-color: #008080;
+}
+
 .hero .hero-wrapper .hero-img-wrapper {
   padding-left: 140px;
 }
@@ -266,18 +279,42 @@ a:hover {
 }
 
 @media only screen and (min-width: 300px) and (max-width: 374px) {
+  .hero .hero-wrapper .hero-text-wrapper {
+    padding-top: 150px;
+    text-align: center;
+  }
+  .hero .hero-wrapper .hero-img-wrapper {
+    padding-left: 15px;
+    margin-top: 50px;
+  }
   .sub-hero-section {
     padding: 10px;
   }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 413px) {
+  .hero .hero-wrapper .hero-text-wrapper {
+    padding-top: 150px;
+    text-align: center;
+  }
+  .hero .hero-wrapper .hero-img-wrapper {
+    padding-left: 15px;
+    margin-top: 50px;
+  }
   .sub-hero-section {
     padding: 10px;
   }
 }
 
 @media only screen and (min-width: 414px) and (max-width: 812px) {
+  .hero .hero-wrapper .hero-text-wrapper {
+    padding-top: 150px;
+    text-align: center;
+  }
+  .hero .hero-wrapper .hero-img-wrapper {
+    padding-left: 15px;
+    margin-top: 50px;
+  }
   .sub-hero-section {
     padding: 10px;
   }

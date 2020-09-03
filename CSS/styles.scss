@@ -80,7 +80,7 @@ a {
     }
 }
 
-.btn-primary{
+.btn-primary {
     font-family: $font-family-light;
 }
 
@@ -95,9 +95,8 @@ a {
             h1 {
                 font-weight: 700;
                 font-size: 4.25em;
-                
             }
-            h3{
+            h3 {
                 line-height: 1.5em;
                 margin-bottom: 0.5em;
             }
@@ -107,7 +106,18 @@ a {
                 font-weight: 400;
                 margin-bottom: 1em;
             }
-           
+
+            .btn-primary {
+                padding: 15px 40px;
+                background-color: transparent;
+                color: #008080;
+                border-color: #008080;
+                &:hover {
+                    background-color: #008080;
+                    color: #fff;
+                    border-color: #008080;
+                }
+            }
         }
         .hero-img-wrapper {
             padding-left: 140px;
@@ -239,16 +249,52 @@ a {
 }
 
 @media only screen and (min-width: 300px) and (max-width: 374px) {
+    .hero {
+        .hero-wrapper {
+            .hero-text-wrapper {
+                padding-top: 150px;
+                text-align: center;
+            }
+            .hero-img-wrapper {
+                padding-left: 15px;
+                margin-top: 50px;
+            }
+        }
+    }
     .sub-hero-section {
         padding: 10px;
     }
 }
 @media only screen and (min-width: 375px) and (max-width: 413px) {
+    .hero {
+        .hero-wrapper {
+            .hero-text-wrapper {
+                padding-top: 150px;
+                text-align: center;
+            }
+            .hero-img-wrapper {
+                padding-left: 15px;
+                margin-top: 50px;
+            }
+        }
+    }
     .sub-hero-section {
         padding: 10px;
     }
 }
 @media only screen and (min-width: 414px) and (max-width: 812px) {
+    .hero {
+        .hero-wrapper {
+            .hero-text-wrapper {
+                padding-top: 150px;
+                text-align: center;
+            }
+            .hero-img-wrapper {
+                padding-left: 15px;
+                margin-top: 50px;
+            }
+        }
+    }
     .sub-hero-section {
         padding: 10px;
     }
