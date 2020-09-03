@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
 @import url("https://rsms.me/inter/inter-ui.css");
 
-$font-family-light: "Poppins", Arial, sans-serif;
+$font-family: "Inter UI", "Poppins", Arial, sans-serif;
 $font-family-medium: "Eina03 Medium", "Poppins", Arial, sans-serif;
 $font-family-bold: "Eina03 Bold", "Poppins", Arial, sans-serif;
 
@@ -31,7 +31,7 @@ body {
     p,
     span,
     li {
-        font-family: $font-family-light;
+        font-family: $font-family;
     }
     border: 20px solid transparent;
     &::before,
@@ -70,6 +70,9 @@ li {
     color: #c4c4c4;
     font-weight: 300;
 }
+h1{
+    color:#000;
+}
 
 a {
     color: #00ffff;
@@ -81,7 +84,7 @@ a {
 }
 
 .btn-primary {
-    font-family: $font-family-light;
+    font-family: $font-family;
 }
 
 .hero {
@@ -253,7 +256,9 @@ a {
         .hero-wrapper {
             .hero-text-wrapper {
                 padding-top: 150px;
-                text-align: center;
+                h1 {
+                    font-size: 2.813em;
+                }
             }
             .hero-img-wrapper {
                 padding-left: 15px;
@@ -270,7 +275,9 @@ a {
         .hero-wrapper {
             .hero-text-wrapper {
                 padding-top: 150px;
-                text-align: center;
+                h1 {
+                    font-size: 2.813em;
+                }
             }
             .hero-img-wrapper {
                 padding-left: 15px;
@@ -287,7 +294,9 @@ a {
         .hero-wrapper {
             .hero-text-wrapper {
                 padding-top: 150px;
-                text-align: center;
+                h1 {
+                    font-size: 2.813em;
+                }
             }
             .hero-img-wrapper {
                 padding-left: 15px;

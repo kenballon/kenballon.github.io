@@ -30,7 +30,7 @@ body h6,
 body p,
 body span,
 body li {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Inter UI", "Poppins", Arial, sans-serif;
 }
 
 body::before, body::after {
@@ -71,6 +71,10 @@ li {
   font-weight: 300;
 }
 
+h1 {
+  color: #000;
+}
+
 a {
   color: #00ffff;
 }
@@ -81,7 +85,7 @@ a:hover {
 }
 
 .btn-primary {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Inter UI", "Poppins", Arial, sans-serif;
 }
 
 .hero {
@@ -281,7 +285,9 @@ a:hover {
 @media only screen and (min-width: 300px) and (max-width: 374px) {
   .hero .hero-wrapper .hero-text-wrapper {
     padding-top: 150px;
-    text-align: center;
+  }
+  .hero .hero-wrapper .hero-text-wrapper h1 {
+    font-size: 2.813em;
   }
   .hero .hero-wrapper .hero-img-wrapper {
     padding-left: 15px;
@@ -295,7 +301,9 @@ a:hover {
 @media only screen and (min-width: 375px) and (max-width: 413px) {
   .hero .hero-wrapper .hero-text-wrapper {
     padding-top: 150px;
-    text-align: center;
+  }
+  .hero .hero-wrapper .hero-text-wrapper h1 {
+    font-size: 2.813em;
   }
   .hero .hero-wrapper .hero-img-wrapper {
     padding-left: 15px;
@@ -309,7 +317,9 @@ a:hover {
 @media only screen and (min-width: 414px) and (max-width: 812px) {
   .hero .hero-wrapper .hero-text-wrapper {
     padding-top: 150px;
-    text-align: center;
+  }
+  .hero .hero-wrapper .hero-text-wrapper h1 {
+    font-size: 2.813em;
   }
   .hero .hero-wrapper .hero-img-wrapper {
     padding-left: 15px;
