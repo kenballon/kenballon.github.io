@@ -288,6 +288,14 @@ a:hover {
   }
   .hero .hero-wrapper .hero-text-wrapper h1 {
     font-size: 2.813em;
+    line-height: 1.3em;
+  }
+  .hero .hero-wrapper .hero-text-wrapper h3 {
+    line-height: 1em;
+  }
+  .hero .hero-wrapper .hero-text-wrapper .about-p {
+    font-size: 1em;
+    line-height: 1.3em;
   }
   .hero .hero-wrapper .hero-img-wrapper {
     padding-left: 15px;
@@ -304,6 +312,14 @@ a:hover {
   }
   .hero .hero-wrapper .hero-text-wrapper h1 {
     font-size: 2.813em;
+    line-height: 1.3em;
+  }
+  .hero .hero-wrapper .hero-text-wrapper h3 {
+    line-height: 1em;
+  }
+  .hero .hero-wrapper .hero-text-wrapper .about-p {
+    font-size: 1em;
+    line-height: 1.3em;
   }
   .hero .hero-wrapper .hero-img-wrapper {
     padding-left: 15px;
@@ -320,6 +336,14 @@ a:hover {
   }
   .hero .hero-wrapper .hero-text-wrapper h1 {
     font-size: 2.813em;
+    line-height: 1.3em;
+  }
+  .hero .hero-wrapper .hero-text-wrapper h3 {
+    line-height: 1em;
+  }
+  .hero .hero-wrapper .hero-text-wrapper .about-p {
+    font-size: 1em;
+    line-height: 1.3em;
   }
   .hero .hero-wrapper .hero-img-wrapper {
     padding-left: 15px;
