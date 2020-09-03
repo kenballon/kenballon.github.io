@@ -55,7 +55,7 @@ body::before, body::after {
 }
 
 body p {
-  color: #192735;
+  color: #454545;
   font-size: 1em;
 }
 
@@ -290,12 +290,9 @@ a:hover {
     font-size: 2.813em;
     line-height: 1.3em;
   }
-  .hero .hero-wrapper .hero-text-wrapper h3 {
-    line-height: 1em;
-  }
   .hero .hero-wrapper .hero-text-wrapper .about-p {
     font-size: 1em;
-    line-height: 1.3em;
+    line-height: 2em;
   }
   .hero .hero-wrapper .hero-img-wrapper {
     padding-left: 15px;
@@ -314,12 +311,9 @@ a:hover {
     font-size: 2.813em;
     line-height: 1.3em;
   }
-  .hero .hero-wrapper .hero-text-wrapper h3 {
-    line-height: 1em;
-  }
   .hero .hero-wrapper .hero-text-wrapper .about-p {
     font-size: 1em;
-    line-height: 1.3em;
+    line-height: 2em;
   }
   .hero .hero-wrapper .hero-img-wrapper {
     padding-left: 15px;
@@ -338,12 +332,9 @@ a:hover {
     font-size: 2.813em;
     line-height: 1.3em;
   }
-  .hero .hero-wrapper .hero-text-wrapper h3 {
-    line-height: 1em;
-  }
   .hero .hero-wrapper .hero-text-wrapper .about-p {
     font-size: 1em;
-    line-height: 1.3em;
+    line-height: 2em;
   }
   .hero .hero-wrapper .hero-img-wrapper {
     padding-left: 15px;
