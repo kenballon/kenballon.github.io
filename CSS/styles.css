@@ -90,9 +90,15 @@ a:hover {
 
 .hero {
   min-height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero .hero-wrapper {
@@ -131,12 +137,9 @@ a:hover {
   border-color: #008080;
 }
 
-.hero .hero-wrapper .hero-img-wrapper {
-  padding-left: 140px;
-}
-
 .hero .hero-wrapper .hero-img-wrapper img {
-  width: 100%;
+  float: right;
+  width: 418px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -298,6 +301,10 @@ a:hover {
     padding-left: 15px;
     margin-top: 50px;
   }
+  .hero .hero-wrapper .hero-img-wrapper img {
+    float: none;
+    width: 100%;
+  }
   .sub-hero-section {
     padding: 10px;
   }
@@ -319,6 +326,10 @@ a:hover {
     padding-left: 15px;
     margin-top: 50px;
   }
+  .hero .hero-wrapper .hero-img-wrapper img {
+    float: none;
+    width: 100%;
+  }
   .sub-hero-section {
     padding: 10px;
   }
@@ -339,6 +350,10 @@ a:hover {
   .hero .hero-wrapper .hero-img-wrapper {
     padding-left: 15px;
     margin-top: 50px;
+  }
+  .hero .hero-wrapper .hero-img-wrapper img {
+    float: none;
+    width: 100%;
   }
   .sub-hero-section {
     padding: 10px;

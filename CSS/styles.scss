@@ -89,8 +89,11 @@ a {
 
 .hero {
     min-height: 100vh;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;    
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     .hero-wrapper {
         align-items: center;
 
@@ -122,10 +125,10 @@ a {
                 }
             }
         }
-        .hero-img-wrapper {
-            padding-left: 140px;
+        .hero-img-wrapper {            
             img {
-                width: 100%;
+                float: right;
+                width: 418px;                
                 object-fit: cover;
             }
         }
@@ -268,6 +271,10 @@ a {
             .hero-img-wrapper {
                 padding-left: 15px;
                 margin-top: 50px;
+                img{
+                    float: none;
+                    width: 100%;
+                }
             }
         }
     }
@@ -292,6 +299,10 @@ a {
             .hero-img-wrapper {
                 padding-left: 15px;
                 margin-top: 50px;
+                img{
+                    float: none;
+                    width: 100%;
+                }
             }
         }
     }
@@ -316,6 +327,10 @@ a {
             .hero-img-wrapper {
                 padding-left: 15px;
                 margin-top: 50px;
+                img{
+                    float: none;
+                    width: 100%;
+                }
             }
         }
     }
