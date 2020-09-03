@@ -5,9 +5,19 @@
   --cardsBackground: #202022;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: var(--body-fonts);
   background-color: var(--mainbody);
+  border: 20px solid transparent;
 }
 
 body h1,
@@ -18,6 +28,32 @@ body h5,
 body h6 {
   font-family: var(--body-fonts);
   color: #fff;
+}
+
+body::before, body::after {
+  z-index: 100;
+  content: "";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: inherit;
+  border-bottom-width: 0;
+  border-color: #008080;
+  will-change: border-color;
+  -webkit-transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
+  transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
+}
+
+body:after {
+  border-width: 0;
+  border-bottom-width: calc(var(--body-border-width, 20px) * 1 / 1 + 0px);
 }
 
 p,
@@ -52,6 +88,10 @@ a:hover {
   font-weight: 600;
 }
 
+.container .hero-wrapper .short-bio .projects ol {
+  list-style-type: none;
+}
+
 .container .hero-wrapper .experience-wrapper {
   width: 100%;
   height: 500px;
@@ -73,6 +113,7 @@ a:hover {
 
 .container .hero-wrapper .experience-wrapper .xp-project-wrapper .card-xp:hover {
   background-color: white;
+  cursor: pointer;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
   margin-left: -8px;
@@ -110,7 +151,7 @@ a:hover {
 
 .sub-hero-section {
   min-height: 100vh;
-  background-color: #7a7a7a;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,6 +191,9 @@ a:hover {
   padding: 30px;
   border-radius: 8px;
   background-color: transparent;
+  border: 0;
+  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 .sub-hero-section .w-row .basic-column .tag-wrapper .tagline.white-hero-tagline {
@@ -252,6 +296,9 @@ a:hover {
   .container .hero-wrapper .experience-wrapper .xp-desgin-wrapper {
     display: initial;
   }
+  .sub-hero-section {
+    padding: 10px;
+  }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 413px) {
@@ -264,6 +311,9 @@ a:hover {
   .container .hero-wrapper .experience-wrapper .xp-desgin-wrapper {
     display: initial;
   }
+  .sub-hero-section {
+    padding: 10px;
+  }
 }
 
 @media only screen and (min-width: 414px) and (max-width: 812px) {
@@ -275,6 +325,9 @@ a:hover {
   }
   .container .hero-wrapper .experience-wrapper .xp-desgin-wrapper {
     display: initial;
+  }
+  .sub-hero-section {
+    padding: 10px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
