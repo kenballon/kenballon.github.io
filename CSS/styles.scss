@@ -372,6 +372,10 @@ footer {
             }
         }
     }
+
+    .prj-row{
+        margin-bottom: unset  !important;
+    }
     .projects-section {
         .projects-grid-wrapper {
             height: 100%;
@@ -381,6 +385,9 @@ footer {
         .blocks {
             display: flex;
             flex-flow: column;
+            .experience-block{
+                margin-bottom:35px !important;
+            }
         }
     }
 }
@@ -413,10 +420,16 @@ footer {
             height: 100%;
         }
     }
+    .prj-row{
+        margin-bottom: unset  !important;
+    }
     #work-experience {
         .blocks {
             display: flex;
             flex-flow: column;
+            .experience-block{
+                margin-bottom:35px !important;
+            }
         }
     }
 }
@@ -449,10 +462,16 @@ footer {
             height: 100%;
         }
     }
+    .prj-row{
+        margin-bottom: unset  !important;
+    }
     #work-experience {
         .blocks {
             display: flex;
             flex-flow: column;
+            .experience-block{
+                margin-bottom:35px !important;
+            }
         }
     }
 }
