@@ -5,7 +5,8 @@ $font-family: "Inter UI", "Poppins", Arial, sans-serif;
 $font-family-medium: "Eina03 Medium", "Poppins", Arial, sans-serif;
 $font-family-bold: "Eina03 Bold", "Poppins", Arial, sans-serif;
 $section-bg-color-light-blue: #f3fdff;
-$border-color: #e91e63;
+$border-color-hero: #e91e63;
+$border-color-services: #F4ECE9;
 $alt-link-color: #008aae;
 *,
 *::before,
@@ -35,7 +36,47 @@ body {
     li {
         font-family: $font-family;
     }
+    span,
+    li {
+        color: #c4c4c4;
+        font-weight: 300;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        opacity: 0.8;
+    }
+
+    a {
+        color: #000;
+    }
+
+    .btn-primary {
+        font-family: $font-family;
+        padding: 15px 40px;
+        background-color: transparent;
+        color: $border-color-hero;
+        border-color: $border-color-hero;
+        &:hover {
+            background-color: $border-color-hero;
+            color: #fff;
+            border-color: $border-color-hero;
+        }
+    }
+
+    .hero-a-link {
+        color: $border-color-hero;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.section-in-view {
     border: 20px solid transparent;
+
     &::before,
     &::after {
         z-index: 100;
@@ -49,63 +90,34 @@ body {
         top: 0;
         border: inherit;
         border-bottom-width: 0;
-        border-color: #e91e63;
+        border-color: $border-color-hero;
         will-change: border-color;
         transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1),
             border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
     }
-
-    p {
-        color: #454545;
-        font-size: 1em;
+    &::after {
+        border-width: 0;
+        border-bottom-width: calc(var(--body-border-width, 20px) * 1 / 1 + 0px);
     }
 }
 
-body:after {
-    border-width: 0;
-    border-bottom-width: calc(var(--body-border-width, 20px) * 1 / 1 + 0px);
-}
-
-p,
-span,
-li {
-    color: #c4c4c4;
-    font-weight: 300;
-}
-h1 {
-    color: #303030;
-}
-h1,
-h2,
-h3,
-h4 {
-    opacity: 0.8;
-}
-
-a {
-    color: #000;
-}
-
-.btn-primary {
-    font-family: $font-family;
-    padding: 15px 40px;
-    background-color: transparent;
-    color: $border-color;
-    border-color: $border-color;
-    &:hover {
-        background-color: $border-color;
-        color: #fff;
-        border-color: $border-color;
+.section-one-scrolled {
+    &::before,
+    &::after {
+        border-color: $alt-link-color;
+        transition: border-color .52s ease;
     }
 }
 
-.hero-a-link {
-    color: $border-color;
-
-    &:hover {
-        text-decoration: none;
+.section-services-scrolled {
+    &::before,
+    &::after {
+        will-change: $alt-link-color;
+        transition: will-change .52s ease;
     }
 }
+
+
 
 .standard {
     position: relative;
@@ -232,7 +244,7 @@ a {
                             cursor: pointer;
                             &:hover {
                                 h3 {
-                                    color: $border-color;
+                                    color: $border-color-hero;
                                 }
                             }
                             h3 {
@@ -277,7 +289,7 @@ a {
             .company {
                 font-family: $font-family;
                 font-size: 20px;
-                color: $border-color;
+                color: $border-color-hero;
                 line-height: 29px;
                 font-weight: 600;
                 margin: 0;
@@ -304,7 +316,6 @@ a {
 footer {
     padding-bottom: 50px;
     .ftr-row {
-       
         h6 {
             font-size: 12px;
             color: #789;
@@ -373,8 +384,8 @@ footer {
         }
     }
 
-    .prj-row{
-        margin-bottom: unset  !important;
+    .prj-row {
+        margin-bottom: unset !important;
     }
     .projects-section {
         .projects-grid-wrapper {
@@ -385,8 +396,8 @@ footer {
         .blocks {
             display: flex;
             flex-flow: column;
-            .experience-block{
-                margin-bottom:35px !important;
+            .experience-block {
+                margin-bottom: 35px !important;
             }
         }
     }
@@ -420,15 +431,15 @@ footer {
             height: 100%;
         }
     }
-    .prj-row{
-        margin-bottom: unset  !important;
+    .prj-row {
+        margin-bottom: unset !important;
     }
     #work-experience {
         .blocks {
             display: flex;
             flex-flow: column;
-            .experience-block{
-                margin-bottom:35px !important;
+            .experience-block {
+                margin-bottom: 35px !important;
             }
         }
     }
@@ -462,15 +473,15 @@ footer {
             height: 100%;
         }
     }
-    .prj-row{
-        margin-bottom: unset  !important;
+    .prj-row {
+        margin-bottom: unset !important;
     }
     #work-experience {
         .blocks {
             display: flex;
             flex-flow: column;
-            .experience-block{
-                margin-bottom:35px !important;
+            .experience-block {
+                margin-bottom: 35px !important;
             }
         }
     }
