@@ -1,5 +1,5 @@
 const bodyBorderColor = document.querySelector('#main')
-const sectionOne = document.querySelector('.hero');
+const sectionOne = document.querySelectorAll('section');
 const sectionServices = document.querySelector('#services-id')
 
 sectionHeroOptions = {
@@ -8,12 +8,13 @@ sectionHeroOptions = {
 
 sectionHeroObserver = new IntersectionObserver((entries, sectionHeroObserver) => {
     entries.forEach(entry => {
+      
         if (!entry.isIntersecting) {
-            bodyBorderColor.classList.add('section-one-scrolled');
-        } else {
-            bodyBorderColor.classList.remove('section-one-scrolled');
-        }
+            bodyBorderColor.classList.toggle('section-one-scrolled');
+        } 
+       
     });
 }, sectionHeroOptions)
-
-sectionHeroObserver.observe(sectionOne);
+sectionOne.forEach(section =>{
+    sectionHeroObserver.observe(section);
+});
