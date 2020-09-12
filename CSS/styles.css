@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
 @import url("https://rsms.me/inter/inter-ui.css");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+body section {
+  scroll-snap-align: start;
+}
+
 *,
 *::before,
 *::after,
@@ -99,15 +113,15 @@ body .hero-a-link:hover {
 }
 
 .section-one-scrolled::before, .section-one-scrolled::after {
-  border-color: #F4ECE9;
-  -webkit-transition: border-color .52s ease-in;
-  transition: border-color .52s ease-in;
+  border-color: #edcbbe;
+  -webkit-transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
+  transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
 }
 
 .section-services-scrolled::before, .section-services-scrolled::after {
   border-color: #008aae;
-  -webkit-transition: will-change .52s ease-in;
-  transition: will-change .52s ease-in;
+  -webkit-transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
+  transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
 }
 
 .standard {
@@ -285,6 +299,58 @@ body .hero-a-link:hover {
   margin-bottom: 30px;
 }
 
+.experiences-seciton {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.experiences-seciton .experiences-grid-container #work-experience {
+  padding: 0 50px;
+}
+
+.experiences-seciton .experiences-grid-container #work-experience .blocks {
+  margin: 1rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.experiences-seciton .experiences-grid-container #work-experience .blocks .experience-block .company {
+  font-family: "Inter UI", "Poppins", Arial, sans-serif;
+  font-size: 20px;
+  color: #e91e63;
+  line-height: 29px;
+  font-weight: 600;
+  margin: 0;
+  text-decoration: none;
+}
+
+.experiences-seciton .experiences-grid-container #work-experience .blocks .experience-block .company:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.experiences-seciton .experiences-grid-container #work-experience .blocks .experience-block .title {
+  opacity: 0.9;
+  font-weight: 400;
+  margin: 2px 0 0;
+}
+
+.experiences-seciton .experiences-grid-container #work-experience .blocks .experience-block .date {
+  margin-top: 2px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
 .slim-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,44 +370,6 @@ body .hero-a-link:hover {
   font-size: 32px;
   font-weight: 300;
   line-height: 40px;
-}
-
-#work-experience .blocks {
-  margin: 1rem 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  grid-gap: 24px;
-  padding-top: 50px;
-  padding-bottom: 100px;
-}
-
-#work-experience .blocks .experience-block .company {
-  font-family: "Inter UI", "Poppins", Arial, sans-serif;
-  font-size: 20px;
-  color: #e91e63;
-  line-height: 29px;
-  font-weight: 600;
-  margin: 0;
-  text-decoration: none;
-}
-
-#work-experience .blocks .experience-block .company:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
-
-#work-experience .blocks .experience-block .title {
-  opacity: 0.9;
-  font-weight: 400;
-  margin: 2px 0 0;
-}
-
-#work-experience .blocks .experience-block .date {
-  margin-top: 2px;
-  font-size: 14px;
-  opacity: 0.7;
 }
 
 footer {
@@ -422,14 +450,39 @@ footer .ftr-row .links ul li {
   .hero .hero-wrapper .hero-img-wrapper img {
     float: none;
     width: 100%;
+    height: 100px;
+  }
+  .hero .hero-wrapper .hero-text-wrapper.mobile {
+    padding-top: 0;
   }
   .prj-row {
     margin-bottom: unset !important;
   }
+  .projects-section {
+    height: 100% !important;
+  }
   .projects-section .projects-grid-wrapper {
     height: 100%;
   }
-  #work-experience .blocks {
+  .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards {
+    display: block !important;
+  }
+  .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .picture, .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .card-details {
+    width: 100% !important;
+  }
+  .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .card-details {
+    padding-top: 30px;
+  }
+  .projects-section .projects-grid-wrapper .section-header h1 {
+    font-size: 3.25em;
+  }
+  .experiences-seciton {
+    height: 100%;
+  }
+  .experiences-seciton .experiences-grid-container #work-experience {
+    padding: 0;
+  }
+  .experiences-seciton .experiences-grid-container #work-experience .blocks {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -438,7 +491,8 @@ footer .ftr-row .links ul li {
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  #work-experience .blocks .experience-block {
+  .experiences-seciton .experiences-grid-container #work-experience .blocks .experience-block {
+    text-align: center;
     margin-bottom: 35px !important;
   }
 }
@@ -462,14 +516,39 @@ footer .ftr-row .links ul li {
   .hero .hero-wrapper .hero-img-wrapper img {
     float: none;
     width: 100%;
+    height: 400px;
+  }
+  .hero .hero-wrapper .hero-text-wrapper.mobile {
+    padding-top: 0;
+  }
+  .projects-section {
+    height: 100% !important;
   }
   .projects-section .projects-grid-wrapper {
     height: 100%;
   }
+  .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards {
+    display: block !important;
+  }
+  .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .picture, .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .card-details {
+    width: 100% !important;
+  }
+  .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .card-details {
+    padding-top: 30px;
+  }
+  .projects-section .projects-grid-wrapper .section-header h1 {
+    font-size: 3.25em;
+  }
   .prj-row {
     margin-bottom: unset !important;
   }
-  #work-experience .blocks {
+  .experiences-seciton {
+    height: 100%;
+  }
+  .experiences-seciton .experiences-grid-container #work-experience {
+    padding: 0;
+  }
+  .experiences-seciton .experiences-grid-container #work-experience .blocks {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -478,8 +557,9 @@ footer .ftr-row .links ul li {
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  #work-experience .blocks .experience-block {
+  .experiences-seciton .experiences-grid-container #work-experience .blocks .experience-block {
     margin-bottom: 35px !important;
+    text-align: center;
   }
 }
 
@@ -502,14 +582,39 @@ footer .ftr-row .links ul li {
   .hero .hero-wrapper .hero-img-wrapper img {
     float: none;
     width: 100%;
+    height: 400px;
+  }
+  .hero .hero-wrapper .hero-text-wrapper.mobile {
+    padding-top: 0;
+  }
+  .projects-section {
+    height: 100% !important;
   }
   .projects-section .projects-grid-wrapper {
     height: 100%;
   }
+  .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards {
+    display: block !important;
+  }
+  .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .picture, .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .card-details {
+    width: 100% !important;
+  }
+  .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .card-details {
+    padding-top: 30px;
+  }
+  .projects-section .projects-grid-wrapper .section-header h1 {
+    font-size: 3.25em;
+  }
   .prj-row {
     margin-bottom: unset !important;
   }
-  #work-experience .blocks {
+  .experiences-seciton {
+    height: 100%;
+  }
+  .experiences-seciton .experiences-grid-container #work-experience {
+    padding: 0;
+  }
+  .experiences-seciton .experiences-grid-container #work-experience .blocks {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -518,8 +623,9 @@ footer .ftr-row .links ul li {
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  #work-experience .blocks .experience-block {
+  .experiences-seciton .experiences-grid-container #work-experience .blocks .experience-block {
     margin-bottom: 35px !important;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */

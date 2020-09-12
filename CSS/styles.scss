@@ -1,12 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
 @import url("https://rsms.me/inter/inter-ui.css");
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    section {
+        scroll-snap-align: start;
+    }
+}
+
 $font-family: "Inter UI", "Poppins", Arial, sans-serif;
 $font-family-medium: "Eina03 Medium", "Poppins", Arial, sans-serif;
 $font-family-bold: "Eina03 Bold", "Poppins", Arial, sans-serif;
 $section-bg-color-light-blue: #f3fdff;
 $border-color-hero: #e91e63;
-$border-color-services: #F4ECE9;
+$border-color-services: #edcbbe;
 $alt-link-color: #008aae;
 *,
 *::before,
@@ -105,7 +117,8 @@ body {
     &::before,
     &::after {
         border-color: $border-color-services;
-        transition: border-color .52s ease-in;
+        transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1),
+            border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
     }
 }
 
@@ -113,11 +126,10 @@ body {
     &::before,
     &::after {
         border-color: $alt-link-color;
-        transition: will-change .52s ease-in;
+        transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1),
+            border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
     }
 }
-
-
 
 .standard {
     position: relative;
@@ -262,6 +274,50 @@ body {
     }
 }
 
+.experiences-seciton{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .experiences-grid-container{
+        #work-experience {
+            padding:0 50px;
+            .blocks {
+                margin: 1rem 0;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 24px;
+                padding-top: 50px;
+                padding-bottom: 100px;
+                .experience-block {
+                    .company {
+                        font-family: $font-family;
+                        font-size: 20px;
+                        color: $border-color-hero;
+                        line-height: 29px;
+                        font-weight: 600;
+                        margin: 0;
+                        text-decoration: none;
+                        &:hover {
+                            opacity: 0.7;
+                            cursor: pointer;
+                        }
+                    }
+                    .title {
+                        opacity: 0.9;
+                        font-weight: 400;
+                        margin: 2px 0 0;
+                    }
+                    .date {
+                        margin-top: 2px;
+                        font-size: 14px;
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .slim-wrapper {
     display: flex;
     align-items: center;
@@ -277,41 +333,7 @@ body {
     }
 }
 
-#work-experience {
-    .blocks {
-        margin: 1rem 0;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 24px;
-        padding-top: 50px;
-        padding-bottom: 100px;
-        .experience-block {
-            .company {
-                font-family: $font-family;
-                font-size: 20px;
-                color: $border-color-hero;
-                line-height: 29px;
-                font-weight: 600;
-                margin: 0;
-                text-decoration: none;
-                &:hover {
-                    opacity: 0.7;
-                    cursor: pointer;
-                }
-            }
-            .title {
-                opacity: 0.9;
-                font-weight: 400;
-                margin: 2px 0 0;
-            }
-            .date {
-                margin-top: 2px;
-                font-size: 14px;
-                opacity: 0.7;
-            }
-        }
-    }
-}
+
 
 footer {
     padding-bottom: 50px;
@@ -379,7 +401,12 @@ footer {
                 img {
                     float: none;
                     width: 100%;
+                    height: 100px;
                 }
+            }
+
+            .hero-text-wrapper.mobile {
+                padding-top: 0;
             }
         }
     }
@@ -388,19 +415,45 @@ footer {
         margin-bottom: unset !important;
     }
     .projects-section {
+        height: 100% !important;
         .projects-grid-wrapper {
             height: 100%;
-        }
-    }
-    #work-experience {
-        .blocks {
-            display: flex;
-            flex-flow: column;
-            .experience-block {
-                margin-bottom: 35px !important;
+
+            .projects-cards-wrapper {
+                .prj-cards {
+                    display: block !important;
+                    .picture,.card-details {
+                        width: 100% !important;
+                    }
+                    .card-details{
+                        padding-top: 30px;
+                    }
+                }
+            }
+            .section-header {
+                h1 {
+                    font-size: 3.25em;
+                }
             }
         }
     }
+    .experiences-seciton{
+        height: 100%;
+        .experiences-grid-container{
+            #work-experience {
+                padding:0;
+                .blocks {
+                    display: flex;
+                    flex-flow: column;
+                    .experience-block {
+                        text-align: center;
+                        margin-bottom: 35px !important;
+                    }
+                }
+            }
+        }
+    }
+    
 }
 @media only screen and (min-width: 375px) and (max-width: 413px) {
     .hero {
@@ -422,24 +475,53 @@ footer {
                 img {
                     float: none;
                     width: 100%;
+                    height: 400px;
                 }
+            }
+            .hero-text-wrapper.mobile {
+                padding-top: 0;
             }
         }
     }
     .projects-section {
+        height: 100% !important;
         .projects-grid-wrapper {
             height: 100%;
+
+            .projects-cards-wrapper {
+                .prj-cards {
+                    display: block !important;
+                    .picture,.card-details {
+                        width: 100% !important;
+                    }
+                    .card-details{
+                        padding-top: 30px;
+                    }
+                }
+            }
+            .section-header {
+                h1 {
+                    font-size: 3.25em;
+                }
+            }
         }
     }
     .prj-row {
         margin-bottom: unset !important;
     }
-    #work-experience {
-        .blocks {
-            display: flex;
-            flex-flow: column;
-            .experience-block {
-                margin-bottom: 35px !important;
+    .experiences-seciton{
+        height: 100%;
+        .experiences-grid-container{
+            #work-experience {
+                padding:0;
+                .blocks {
+                    display: flex;
+                    flex-flow: column;
+                    .experience-block {
+                        margin-bottom: 35px !important;
+                        text-align: center;
+                    }
+                }
             }
         }
     }
@@ -464,24 +546,53 @@ footer {
                 img {
                     float: none;
                     width: 100%;
+                    height: 400px;
                 }
+            }
+            .hero-text-wrapper.mobile {
+                padding-top: 0;
             }
         }
     }
     .projects-section {
+        height: 100% !important;
         .projects-grid-wrapper {
             height: 100%;
+
+            .projects-cards-wrapper {
+                .prj-cards {
+                    display: block !important;
+                    .picture,.card-details {
+                        width: 100% !important;
+                    }
+                    .card-details{
+                        padding-top: 30px;
+                    }
+                }
+            }
+            .section-header {
+                h1 {
+                    font-size: 3.25em;
+                }
+            }
         }
     }
     .prj-row {
         margin-bottom: unset !important;
     }
-    #work-experience {
-        .blocks {
-            display: flex;
-            flex-flow: column;
-            .experience-block {
-                margin-bottom: 35px !important;
+    .experiences-seciton{
+        height: 100%;
+        .experiences-grid-container{
+            #work-experience {
+                padding:0;
+                .blocks {
+                    display: flex;
+                    flex-flow: column;
+                    .experience-block {
+                        margin-bottom: 35px !important;
+                        text-align: center;
+                    }
+                }
             }
         }
     }
