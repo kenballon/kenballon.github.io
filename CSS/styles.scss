@@ -4,14 +4,14 @@
 html {
     scroll-behavior: smooth;
 }
-
+/*
 body {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     section,footer {
         scroll-snap-align: start;
     }
-}
+}*/
 
 $font-family: "Inter UI", "Poppins", Arial, sans-serif;
 $font-family-medium: "Eina03 Medium", "Poppins", Arial, sans-serif;
