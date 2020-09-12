@@ -8,7 +8,7 @@ html {
 body {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    section {
+    section,footer {
         scroll-snap-align: start;
     }
 }
