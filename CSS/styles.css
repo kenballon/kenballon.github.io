@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
 @import url("https://rsms.me/inter/inter-ui.css");
-html {
-  scroll-behavior: smooth;
+@media screen and (min-width: 1200px) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
+/*
 body {
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-}
-
-body section {
-  scroll-snap-align: start;
-}
-
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    section,footer {
+        scroll-snap-align: start;
+    }
+}*/
 *,
 *::before,
 *::after,
@@ -467,7 +467,8 @@ footer .ftr-row .links ul li {
   .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards {
     display: block !important;
   }
-  .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .picture, .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .card-details {
+  .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .picture,
+  .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .card-details {
     width: 100% !important;
   }
   .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .card-details {
@@ -530,7 +531,8 @@ footer .ftr-row .links ul li {
   .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards {
     display: block !important;
   }
-  .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .picture, .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .card-details {
+  .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .picture,
+  .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .card-details {
     width: 100% !important;
   }
   .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .card-details {
@@ -596,7 +598,8 @@ footer .ftr-row .links ul li {
   .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards {
     display: block !important;
   }
-  .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .picture, .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .card-details {
+  .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .picture,
+  .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .card-details {
     width: 100% !important;
   }
   .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards .card-details {
