@@ -104,16 +104,16 @@ body {
 .section-one-scrolled {
     &::before,
     &::after {
-        border-color: $alt-link-color;
-        transition: border-color .52s ease;
+        border-color: $border-color-services;
+        transition: border-color .52s ease-in;
     }
 }
 
 .section-services-scrolled {
     &::before,
     &::after {
-        will-change: $alt-link-color;
-        transition: will-change .52s ease;
+        border-color: $alt-link-color;
+        transition: will-change .52s ease-in;
     }
 }
 

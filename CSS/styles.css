@@ -99,15 +99,15 @@ body .hero-a-link:hover {
 }
 
 .section-one-scrolled::before, .section-one-scrolled::after {
-  border-color: #008aae;
-  -webkit-transition: border-color .52s ease;
-  transition: border-color .52s ease;
+  border-color: #F4ECE9;
+  -webkit-transition: border-color .52s ease-in;
+  transition: border-color .52s ease-in;
 }
 
 .section-services-scrolled::before, .section-services-scrolled::after {
-  will-change: #008aae;
-  -webkit-transition: will-change .52s ease;
-  transition: will-change .52s ease;
+  border-color: #008aae;
+  -webkit-transition: will-change .52s ease-in;
+  transition: will-change .52s ease-in;
 }
 
 .standard {
