@@ -426,6 +426,8 @@ footer .ftr-container .ftr-row .links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 footer .ftr-container .ftr-row .links ul li {
