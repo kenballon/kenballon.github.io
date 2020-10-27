@@ -299,7 +299,7 @@ body .hero-a-link:hover {
   margin-bottom: 30px;
 }
 
-.experiences-seciton {
+.experiences-section {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,11 +309,11 @@ body .hero-a-link:hover {
           align-items: center;
 }
 
-.experiences-seciton .experiences-grid-container #work-experience {
+.experiences-section .experiences-grid-container #work-experience {
   padding: 0 50px;
 }
 
-.experiences-seciton .experiences-grid-container #work-experience .blocks {
+.experiences-section .experiences-grid-container #work-experience .blocks {
   margin: 1rem 0;
   display: -ms-grid;
   display: grid;
@@ -324,7 +324,7 @@ body .hero-a-link:hover {
   padding-bottom: 100px;
 }
 
-.experiences-seciton .experiences-grid-container #work-experience .blocks .experience-block .company {
+.experiences-section .experiences-grid-container #work-experience .blocks .experience-block .company {
   font-family: "Inter UI", "Poppins", Arial, sans-serif;
   font-size: 20px;
   color: #e91e63;
@@ -334,18 +334,18 @@ body .hero-a-link:hover {
   text-decoration: none;
 }
 
-.experiences-seciton .experiences-grid-container #work-experience .blocks .experience-block .company:hover {
+.experiences-section .experiences-grid-container #work-experience .blocks .experience-block .company:hover {
   opacity: 0.7;
   cursor: pointer;
 }
 
-.experiences-seciton .experiences-grid-container #work-experience .blocks .experience-block .title {
+.experiences-section .experiences-grid-container #work-experience .blocks .experience-block .title {
   opacity: 0.9;
   font-weight: 400;
   margin: 2px 0 0;
 }
 
-.experiences-seciton .experiences-grid-container #work-experience .blocks .experience-block .date {
+.experiences-section .experiences-grid-container #work-experience .blocks .experience-block .date {
   margin-top: 2px;
   font-size: 14px;
   opacity: 0.7;
