@@ -6,14 +6,6 @@
   }
 }
 
-/*
-body {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    section,footer {
-        scroll-snap-align: start;
-    }
-}*/
 *,
 *::before,
 *::after,
@@ -155,6 +147,7 @@ body .hero-a-link:hover {
 }
 
 .hero {
+  position: relative;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,7 +189,8 @@ body .hero-a-link:hover {
 }
 
 .hero.services {
-  padding-top: 200px;
+  position: relative;
+  padding-top: 120px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -224,19 +218,12 @@ body .hero-a-link:hover {
 }
 
 .projects-section {
-  min-height: 100vh;
+  position: relative;
   background-color: #f3fdff;
 }
 
-.projects-section .projects-grid-wrapper {
-  height: 100vh;
-}
-
-.projects-section .projects-grid-wrapper .section-header {
-  padding-top: 150px;
-}
-
 .projects-section .projects-grid-wrapper .section-header h1 {
+  padding-top: 120px;
   font-weight: 400;
   font-size: 4.25em;
 }
@@ -300,7 +287,6 @@ body .hero-a-link:hover {
 }
 
 .experiences-section {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,8 +295,8 @@ body .hero-a-link:hover {
           align-items: center;
 }
 
-.experiences-section .experiences-grid-container #work-experience {
-  padding: 0 50px;
+.experiences-section .experiences-grid-container {
+  width: 100%;
 }
 
 .experiences-section .experiences-grid-container #work-experience .blocks {
@@ -358,18 +344,18 @@ body .hero-a-link:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 4em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .slim-wrapper h5 {
-  padding: 0;
+  padding-top: 4em;
   color: #2f4f4f;
   font-size: 32px;
   font-weight: 300;
   line-height: 40px;
+  width: 65%;
 }
 
 footer {
@@ -461,12 +447,6 @@ footer .ftr-container .ftr-row .links ul li {
   .prj-row {
     margin-bottom: unset !important;
   }
-  .projects-section {
-    height: 100% !important;
-  }
-  .projects-section .projects-grid-wrapper {
-    height: 100%;
-  }
   .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards {
     display: block !important;
   }
@@ -483,9 +463,6 @@ footer .ftr-container .ftr-row .links ul li {
   .experiences-seciton {
     height: 100%;
   }
-  .experiences-seciton .experiences-grid-container #work-experience {
-    padding: 0;
-  }
   .experiences-seciton .experiences-grid-container #work-experience .blocks {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -498,6 +475,9 @@ footer .ftr-container .ftr-row .links ul li {
   .experiences-seciton .experiences-grid-container #work-experience .blocks .experience-block {
     text-align: center;
     margin-bottom: 35px !important;
+  }
+  .slim-wrapper h5 {
+    width: 100%;
   }
 }
 
@@ -525,12 +505,6 @@ footer .ftr-container .ftr-row .links ul li {
   .hero .hero-wrapper .hero-text-wrapper.mobile {
     padding-top: 0;
   }
-  .projects-section {
-    height: 100% !important;
-  }
-  .projects-section .projects-grid-wrapper {
-    height: 100%;
-  }
   .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards {
     display: block !important;
   }
@@ -547,12 +521,6 @@ footer .ftr-container .ftr-row .links ul li {
   .prj-row {
     margin-bottom: unset !important;
   }
-  .experiences-seciton {
-    height: 100%;
-  }
-  .experiences-seciton .experiences-grid-container #work-experience {
-    padding: 0;
-  }
   .experiences-seciton .experiences-grid-container #work-experience .blocks {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -565,6 +533,9 @@ footer .ftr-container .ftr-row .links ul li {
   .experiences-seciton .experiences-grid-container #work-experience .blocks .experience-block {
     margin-bottom: 35px !important;
     text-align: center;
+  }
+  .slim-wrapper h5 {
+    width: 100%;
   }
 }
 
@@ -592,12 +563,6 @@ footer .ftr-container .ftr-row .links ul li {
   .hero .hero-wrapper .hero-text-wrapper.mobile {
     padding-top: 0;
   }
-  .projects-section {
-    height: 100% !important;
-  }
-  .projects-section .projects-grid-wrapper {
-    height: 100%;
-  }
   .projects-section .projects-grid-wrapper .projects-cards-wrapper .prj-cards {
     display: block !important;
   }
@@ -614,12 +579,6 @@ footer .ftr-container .ftr-row .links ul li {
   .prj-row {
     margin-bottom: unset !important;
   }
-  .experiences-seciton {
-    height: 100%;
-  }
-  .experiences-seciton .experiences-grid-container #work-experience {
-    padding: 0;
-  }
   .experiences-seciton .experiences-grid-container #work-experience .blocks {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -632,6 +591,9 @@ footer .ftr-container .ftr-row .links ul li {
   .experiences-seciton .experiences-grid-container #work-experience .blocks .experience-block {
     margin-bottom: 35px !important;
     text-align: center;
+  }
+  .slim-wrapper h5 {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
