@@ -235,12 +235,15 @@ body {
             }
             .previous-work {
                 position: relative;
+                padding:20px 20px 55px 20px;
+                &:first-child{
+                    padding-top: 50px !important;
+                }
                 .prev-work-detail {
                     position: relative;
                     display: flex;
                     align-items: center;
-                    .prev-h2-title {
-                        font-weight: 700;
+                    .prev-h2-title {                        
                         color: $alt-link-color;
                     }
                     .date-class {
@@ -254,7 +257,7 @@ body {
                 .prev-work-img-right {
                     position: relative;
                     img {
-                        width: 100%;
+                        width: 80%;
                     }
                 }
             }
@@ -413,6 +416,7 @@ footer {
                 .previous-work {
                     .prev-work-img-right {
                         img {
+                            width: 100%;
                             margin-top: 30px;
                         }
                     }
@@ -480,6 +484,7 @@ footer {
                 .previous-work {
                     .prev-work-img-right {
                         img {
+                            width: 100%;
                             margin-top: 30px;
                         }
                     }
@@ -549,6 +554,7 @@ footer {
                 .previous-work {
                     .prev-work-img-right {
                         img {
+                            width: 100%;
                             margin-top: 30px;
                         }
                     }

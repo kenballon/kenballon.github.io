@@ -242,6 +242,11 @@ body .hero-a-link:hover {
 
 .projects-section .projects-grid-wrapper .prev-work-container-scroll .previous-work {
   position: relative;
+  padding: 20px 20px 55px 20px;
+}
+
+.projects-section .projects-grid-wrapper .prev-work-container-scroll .previous-work:first-child {
+  padding-top: 50px !important;
 }
 
 .projects-section .projects-grid-wrapper .prev-work-container-scroll .previous-work .prev-work-detail {
@@ -255,7 +260,6 @@ body .hero-a-link:hover {
 }
 
 .projects-section .projects-grid-wrapper .prev-work-container-scroll .previous-work .prev-work-detail .prev-h2-title {
-  font-weight: 700;
   color: #008aae;
 }
 
@@ -273,7 +277,7 @@ body .hero-a-link:hover {
 }
 
 .projects-section .projects-grid-wrapper .prev-work-container-scroll .previous-work .prev-work-img-right img {
-  width: 100%;
+  width: 80%;
 }
 
 .experiences-section {
@@ -440,6 +444,7 @@ footer .ftr-container .ftr-row .links ul li {
     font-size: 2.813em;
   }
   .projects-section .projects-grid-wrapper .prev-work-container-scroll .previous-work .prev-work-img-right img {
+    width: 100%;
     margin-top: 30px;
   }
   .experiences-seciton {
@@ -491,6 +496,7 @@ footer .ftr-container .ftr-row .links ul li {
     font-size: 2.813em;
   }
   .projects-section .projects-grid-wrapper .prev-work-container-scroll .previous-work .prev-work-img-right img {
+    width: 100%;
     margin-top: 30px;
   }
   .prj-row {
@@ -542,6 +548,7 @@ footer .ftr-container .ftr-row .links ul li {
     font-size: 2.813em;
   }
   .projects-section .projects-grid-wrapper .prev-work-container-scroll .previous-work .prev-work-img-right img {
+    width: 100%;
     margin-top: 30px;
   }
   .prj-row {
