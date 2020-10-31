@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="UI Developer, UI Designer">
-    <title>Kenneth Ballon</title>    
+    <title>Kenneth Ballon</title>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="/CSS/style.min.css">
+    <link rel="stylesheet" href="/CSS/styles.css">
     <link rel="shortcut icon" href="https://www.designbetter.co/static/img/favicon@2x.png">
     <script src="/Script/interactive.js" defer></script>
 </head>
@@ -22,12 +22,11 @@
             <div class="hero-wrapper row">
                 <div class="hero-text-wrapper col-md-6">
                     <h1>Kenneth Ballon</h1>
-                    <h3>UI Designer & Developer</h3>
-                    <p class="about-p">Hi! I'm a Front End Developer and Designer looking to facilitate the
-                        creation
-                        of aesthetically designed websites. I sometimes play on<a href="https://dribbble.com/kenballon"
-                            target="_blank" rel="noopener" class="hero-a-link standard"> Dribble</a> and post some work at<a
-                            href="https://www.behance.net/kenballon" target="_blank" rel="noopener" class="hero-a-link standard">
+                    <h3>UI Developer & Designer</h3>
+                    <p class="about-p">Hi! I'm a <strong>Front End UI Developer</strong> for almost 3 years and sometimes I also do <strong>Web Design</strong> depending on the needs of a certain project. You can check some of my design work at<a href="https://dribbble.com/kenballon"
+                            target="_blank" rel="noopener" class="hero-a-link standard" title="Dribbble Profile Link"> Dribble</a> and I post some work
+                        at<a href="https://www.behance.net/kenballon" target="_blank" rel="noopener"
+                            class="hero-a-link standard">
                             Behance</a> too.</p>
                     <a href="#services-id" class="btn btn-primary" id="how-help-btn">How Can I Help</a>
                 </div>
@@ -54,78 +53,97 @@
             </div>
         </section>
 
-        <section class="projects-section" id="project-section-id">
+        <section class="projects-section" id="project-section-id" >
             <div class="projects-grid-wrapper container">
                 <div class="section-header ">
-                    <h1 class="col-md-8">I design and build for the users</h1>
+                    <h1 class="col-md-8">Previous Work</h1>
                 </div>
 
-                <div class="projects-cards-wrapper">
-                    <div class="prj-row row">
-                        <div class="prj-cards col-md-6">
-                            <div class="picture">
-                                <img src="/Assets/Thecreative4_optimized.jpg" width="187" height="187"
-                                    alt="SDP Tablet & Mobile Mockup">
-                            </div>
-                            <div class="card-details">
-                                <a href="https://www.thecreativecomposite.co.uk/" target="_blank" class="header-link" rel="noopener">
-                                    <h3>The Creative Composite UK</h3>
-                                </a>
-
-                                <p>Built with WordPress and Elegant themes plugin. Some elements has to be built with JavaScript and jQuery. </p>
-                            </div>
-                        </div>
-
-                        <div class="prj-cards col-md-6">
-                            <div class="picture">
-                                <img src="/Assets/sdp_optimized.png" width="187" height="187" alt="SDP Tablet & Mobile Mockup">
-                            </div>
-                            <div class="card-details">
-                                <a href="https://shuttered-dreams-project.webflow.io/" target="_blank"
-                                    class="header-link" rel="noopener">
-                                    <h3>Shuttered Dreams Project</h3>
-                                </a>
-
-                                <p>A design challenge I created in Adobe XD and build in Webflow. SDP is a wedding
-                                    photography business based in Marikina City in the Philippines. </p>
+                <!-- Cards for Recent and Previous Work  -->
+                <div class="prev-work-container-scroll">
+                    <div class="previous-work row" style="padding:20px">
+                        <div class="col-md-6 prev-work-detail">
+                            <div>
+                                <h2 class="prev-h2-title">Zangle Official</h2>
+                                <span class="date-class">Sep 2020</span>
+                                <p class="about-p">Built a <strong>Shopify Custom UI Product Page</strong> for Zangle which user can order a
+                                    custom Album Cover artwork as well as their favorite
+                                    song and artist. User can also search songs from Spotify made possible through API Request. This
+                                    automatically store
+                                    songs and album cover image through a hidden input fields for the order to go through.</p>
+                                <a href="https://zangleofficial.com/products/spotify-custom-glass-plate" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-primary" title="Button that link to Zangle Product Page">Visit Product Page</a>
                             </div>
                         </div>
-
-
+                        <div class="col-md-6 prev-work-img-right">
+                            <img src="/Assets/prev-zangle-img-265.png" alt="Zangle Previous Work Image" width="520" 
+                            srcset="/Assets/prev-zangle-img-265.png 480w,
+                            /Assets/prev-zangle-img-520.png 960w,
+                            /Assets/prev-zangle-img-520.png 1440w,
+                            /Assets/prev-zangle-img-520.png 1920w">
+                        </div>
                     </div>
 
-                    <div class="prj-row row">
-                        <div class="prj-cards col-md-6">
-                            <div class="picture">
-                                <img src="/Assets/archipro_Optimized.png" width="187" height="187"
-                                    alt="SDP Tablet & Mobile Mockup">
-                            </div>
-                            <div class="card-details">
-                                <a href="https://archipro.webflow.io/" target="_blank" class="header-link" rel="noopener">
-                                    <h3>Architecture Mag Mockup</h3>
-                                </a>
-
-                                <p>A design challenge to build using CSS Grid in Webflow. Proud to be able to do this
-                                    challenge. </p>
+                    <div class="previous-work row" style="padding:20px">
+                        <div class="col-md-6 prev-work-detail">
+                            <div>
+                                <h2 class="prev-h2-title">Architecture Mag</h2>
+                                <span class="date-class">Sep 2019</span>
+                                <p class="about-p">A design challenge to build Web Page using Webflow.</p>
+                                <a href="https://archipro.webflow.io/" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-primary" title="Button that link to Webflow Mockup">Visit
+                                    Webflow Site</a>
                             </div>
                         </div>
-                        <div class="prj-cards col-md-6">
-                            <div class="picture">
-                                <img src="/Assets/great impire - optimized.png" width="187" height="187"
-                                    alt="SDP Tablet & Mobile Mockup">
-                            </div>
-                            <div class="card-details">
-                                <a href="https://empirecity.ph/" target="_blank" class="header-link" rel="noopener">
-                                    <h3>Great Empire Realty</h3>
-                                </a>
-                                <p>A website designed using figma and was build using WordPress and Elementor Theme.
-                                </p>
-                            </div>
+                        <div class="col-md-6 prev-work-img-right">
+                            <img src="/Assets/archimag-520.png" alt="Zangle Previous Work Image">
                         </div>
-
                     </div>
+                    
+                    <div class="previous-work row" style="padding:20px">
+                        <div class="col-md-6 prev-work-detail">
+                            <div>
+                                <h2 class="prev-h2-title">The Creative Composite UK</h2>
+                                <span class="date-class">Feb - Apr 2019</span>
+                                <p class="about-p">This website provides guide and marketing strategy to various Dentist to get more client
+                                    in their respective area in the
+                                    U.K.</p>
+                                <p class="about-p">I built the Web UI with WordPress and Elegant Theme Plugin (a.ka. Divi Theme). Other UI
+                                    that can’t be handled by the
+                                    theme was built jQuery.</p>
+                                <a href="https://www.thecreativecomposite.co.uk/" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-primary">Visit Live Site</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 prev-work-img-right">
+                            <img src="/Assets/the-creative-co-520.png" alt="Zangle Previous Work Image">
+                        </div>
+                    </div>
+                    
+                    <div class="previous-work row" style="padding:20px">
+                        <div class="col-md-6 prev-work-detail">
+                            <div>
+                                <h2 class="prev-h2-title">Great Empire Realty</h2>
+                                <span class="date-class">June - July 2019</span>
+                                <p class="about-p">This website showcases some townhouses built by Great Empire Realty. They’ve been
+                                    industry for more than 10 years. They also have some
+                                    <a href="https://www.quezoncityhouseandlot.com/" class="hero-a-link standard">website</a> that shows
+                                    their other work</p>
+                                <p class="about-p">I designed this using Figma and was built using WordPress and Elementor Theme.</p>
+                                <a href="http://houseforsaleinquezoncity.com/" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-primary">Visit Live Site</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 prev-work-img-right">
+                            <img src="/Assets/greate-empire-520.png" alt="Zangle Previous Work Image">
+                        </div>
+                    </div>
+                                        
                 </div>
-                <div style="text-align: center;cursor: pointer;">
+                
+
+                <!-- cursor to experience list  -->
+                <div style="text-align: center;cursor: pointer;height: 80px;margin-top:30px;">
                     <a href="#experience-header">
                         <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
@@ -133,23 +151,24 @@
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                         </svg>
                     </a>
-                   
+
                 </div>
-            </div>           
+            </div>
         </section>
 
         <section class="experiences-section container">
             <div class="experiences-grid-container">
                 <div class="container slim-wrapper">
-                    <h5 id="experience-header">I have almost 6 years of experience working with tech companies and small scale
+                    <h5 id="experience-header">I have almost 6 years of experience working with tech companies and small
+                        scale
                         businesses.</h5>
                 </div>
 
                 <div id="work-experience" class="container">
                     <div class="content">
                         <div class="blocks">
-                            <div class="experience-block"><a class="company" href="https://barhead.com/"
-                                    target="_blank" rel="noopener">Barhead
+                            <div class="experience-block"><a class="company" href="https://barhead.com/" target="_blank"
+                                    rel="noopener">Barhead
                                     Solutions</a>
                                 <p class="title">Technical Consultant / UI Developer</p>
                                 <p class="date">Jan 2020 - Sep 2020</p>
@@ -174,7 +193,7 @@
                     </div>
                 </div>
             </div>
-        </section>        
+        </section>
     </main>
 
     <footer id="footer">
@@ -191,8 +210,8 @@
                                 rel="noopener">Dribbble</a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/kenneth-ballon-12a11738/" alt="Linkedin" target="_blank"
-                                rel="noopener">Linkedin</a>
+                            <a href="https://www.linkedin.com/in/kenneth-ballon-12a11738/" alt="Linkedin"
+                                target="_blank" rel="noopener">Linkedin</a>
                         </li>
                         <li>
                             <a href="https://open.spotify.com/user/12147296925" alt="Spotify" target="_blank"
@@ -206,7 +225,7 @@
                             <a href="https://instagram.com/kenballon" alt="Linkedin" target="_blank"
                                 rel="noopener">Instagram</a>
                         </li>
-    
+
                     </ul>
                 </div>
             </div>
