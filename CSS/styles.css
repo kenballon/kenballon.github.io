@@ -55,18 +55,22 @@ body .btn-primary {
   font-family: "Inter UI", "Poppins", Arial, sans-serif;
   padding: 15px 40px;
   background-color: transparent;
-  color: #e91e63;
-  border-color: #e91e63;
+  color: #2758e9;
+  border-color: #2758e9;
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+  -webkit-animation-duration: 3.6s;
+          animation-duration: 3.6s;
 }
 
 body .btn-primary:hover {
-  background-color: #e91e63;
+  background-color: #2758e9;
   color: #fff;
-  border-color: #e91e63;
+  border-color: #2758e9;
 }
 
 body .hero-a-link {
-  color: #e91e63;
+  color: #2758e9;
 }
 
 body .hero-a-link:hover {
@@ -74,7 +78,7 @@ body .hero-a-link:hover {
 }
 
 .section-in-view {
-  border: 20px solid transparent;
+  border: 15px solid transparent;
 }
 
 .section-in-view::before, .section-in-view::after {
@@ -92,7 +96,7 @@ body .hero-a-link:hover {
   top: 0;
   border: inherit;
   border-bottom-width: 0;
-  border-color: #e91e63;
+  border-color: #2758e9;
   will-change: border-color;
   -webkit-transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
   transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
@@ -100,7 +104,7 @@ body .hero-a-link:hover {
 
 .section-in-view::after {
   border-width: 0;
-  border-bottom-width: calc(var(--body-border-width, 20px) * 1 / 1 + 0px);
+  border-bottom-width: calc(var(--body-border-width, 15px) * 1 / 1 + 0px);
 }
 
 .section-one-scrolled::before, .section-one-scrolled::after {
@@ -145,29 +149,55 @@ body .hero-a-link:hover {
   width: 100%;
 }
 
+.my-name {
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.job-role {
+  margin-bottom: 1.875em;
+  opacity: .6;
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
 .about-p {
   font-size: 1.188em;
   line-height: 1.5em;
   font-weight: 400;
   margin-bottom: 1em;
   opacity: 0.8;
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .hero {
   position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  max-width: 1024px;
+  margin: auto;
 }
 
 .hero .hero-wrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  gap: 20px;
+}
+
+.hero .hero-wrapper .hero-text-wrapper {
+  width: 100%;
 }
 
 .hero .hero-wrapper .hero-text-wrapper h1 {
@@ -180,11 +210,25 @@ body .hero-a-link:hover {
   margin-bottom: 0.5em;
 }
 
+.hero .hero-wrapper .hero-text-wrapper .about-p {
+  max-width: 56.25ch;
+}
+
+.hero .hero-wrapper .hero-img-wrapper {
+  -webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  width: 100%;
+  height: 300px;
+}
+
 .hero .hero-wrapper .hero-img-wrapper img {
   float: right;
-  width: 418px;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .hero.services {
@@ -193,6 +237,7 @@ body .hero-a-link:hover {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  background-color: #fff7f4;
 }
 
 .hero.services h2 {
@@ -209,6 +254,12 @@ body .hero-a-link:hover {
 
 .hero.services .about-p {
   margin-bottom: 30px;
+}
+
+.hero.services .hero-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .hero.services .hero-wrapper .hero-img-wrapper img {
@@ -307,7 +358,7 @@ body .hero-a-link:hover {
 .experiences-section .experiences-grid-container #work-experience .blocks .experience-block .company {
   font-family: "Inter UI", "Poppins", Arial, sans-serif;
   font-size: 20px;
-  color: #e91e63;
+  color: #2758e9;
   line-height: 29px;
   font-weight: 600;
   margin: 0;
@@ -414,9 +465,13 @@ footer .ftr-container .ftr-row .links ul li {
   margin-right: 10px;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 374px) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
+  .hero .hero-wrapper {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
   .hero .hero-wrapper .hero-text-wrapper {
-    padding-top: 150px;
+    padding: 25px;
   }
   .hero .hero-wrapper .hero-text-wrapper h1 {
     font-size: 2.813em;
@@ -427,12 +482,7 @@ footer .ftr-container .ftr-row .links ul li {
     line-height: 2em;
   }
   .hero .hero-wrapper .hero-img-wrapper {
-    padding-left: 15px;
-    margin-top: 50px;
-  }
-  .hero .hero-wrapper .hero-img-wrapper img {
-    float: none;
-    width: 100%;
+    display: none;
   }
   .hero .hero-wrapper .hero-text-wrapper.mobile {
     padding-top: 0;
@@ -462,110 +512,6 @@ footer .ftr-container .ftr-row .links ul li {
   .experiences-seciton .experiences-grid-container #work-experience .blocks .experience-block {
     text-align: center;
     margin-bottom: 35px !important;
-  }
-  .slim-wrapper h5 {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 375px) and (max-width: 413px) {
-  .hero .hero-wrapper .hero-text-wrapper {
-    padding-top: 150px;
-  }
-  .hero .hero-wrapper .hero-text-wrapper h1 {
-    font-size: 2.813em;
-    line-height: 1.3em;
-  }
-  .hero .hero-wrapper .hero-text-wrapper .about-p {
-    font-size: 1em;
-    line-height: 2em;
-  }
-  .hero .hero-wrapper .hero-img-wrapper {
-    padding-left: 15px;
-    margin-top: 50px;
-  }
-  .hero .hero-wrapper .hero-img-wrapper img {
-    float: none;
-    width: 100%;
-    height: 400px;
-  }
-  .hero .hero-wrapper .hero-text-wrapper.mobile {
-    padding-top: 0;
-  }
-  .projects-section .projects-grid-wrapper .section-header h1 {
-    font-size: 2.813em;
-  }
-  .projects-section .projects-grid-wrapper .prev-work-container-scroll .previous-work .prev-work-img-right img {
-    width: 100%;
-    margin-top: 30px;
-  }
-  .prj-row {
-    margin-bottom: unset !important;
-  }
-  .experiences-seciton .experiences-grid-container #work-experience .blocks {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-  }
-  .experiences-seciton .experiences-grid-container #work-experience .blocks .experience-block {
-    margin-bottom: 35px !important;
-    text-align: center;
-  }
-  .slim-wrapper h5 {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 414px) and (max-width: 812px) {
-  .hero .hero-wrapper .hero-text-wrapper {
-    padding-top: 150px;
-  }
-  .hero .hero-wrapper .hero-text-wrapper h1 {
-    font-size: 2.813em;
-    line-height: 1.3em;
-  }
-  .hero .hero-wrapper .hero-text-wrapper .about-p {
-    font-size: 1em;
-    line-height: 2em;
-  }
-  .hero .hero-wrapper .hero-img-wrapper {
-    padding-left: 15px;
-    margin-top: 50px;
-  }
-  .hero .hero-wrapper .hero-img-wrapper img {
-    float: none;
-    width: 100%;
-    height: 400px;
-  }
-  .hero .hero-wrapper .hero-text-wrapper.mobile {
-    padding-top: 0;
-  }
-  .projects-section .projects-grid-wrapper .section-header h1 {
-    font-size: 2.813em;
-  }
-  .projects-section .projects-grid-wrapper .prev-work-container-scroll .previous-work .prev-work-img-right img {
-    width: 100%;
-    margin-top: 30px;
-  }
-  .prj-row {
-    margin-bottom: unset !important;
-  }
-  .experiences-seciton .experiences-grid-container #work-experience .blocks {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-  }
-  .experiences-seciton .experiences-grid-container #work-experience .blocks .experience-block {
-    margin-bottom: 35px !important;
-    text-align: center;
   }
   .slim-wrapper h5 {
     width: 100%;

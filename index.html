@@ -6,42 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="UI Developer, UI Designer">
     <title>Kenneth Ballon</title>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/Assets/favicon.png">
+    <!-- boostrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="/CSS/style.min.css">
-    <link rel="shortcut icon" href="/Assets/favicon.png">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <!-- animate.css library  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- JS for border  -->
     <script src="/Script/interactive.js" defer></script>
 </head>
 
 <body id="main" class="section-in-view">
     <main class="main-container">
-        <section class="hero container">
-            <div class="hero-wrapper row">
-                <div class="hero-text-wrapper col-md-6">
-                    <h1>Kenneth Ballon</h1>
-                    <h3>UI Developer & Designer</h3>
-                    <p class="about-p">Hi! I'm a <strong>UI Developer</strong> with almost 3 years of experience in
-                        Front-end Web Development, plus an Application Support Engineer for 3 year prior to Front-End
-                        Development. I also do <strong>Web Design</strong> depending on the needs of a certain project.
-                        You can check some of my design work at<a href="https://dribbble.com/kenballon" target="_blank"
-                            rel="noopener" class="hero-a-link standard" title="Dribbble Profile Link"> Dribble</a> and I
-                        post some work
-                        at<a href="https://www.behance.net/kenballon" target="_blank" rel="noopener"
-                            class="hero-a-link standard">
-                            Behance</a> too.</p>
-                    <a href="#services-id" class="btn btn-primary" id="how-help-btn">How Can I Help</a>
+        <section class="hero">
+            <div class="hero-wrapper">
+                <div class="hero-text-wrapper">
+                    <div>
+                        <h1 class="my-name">Kenneth Ballon</h1>
+                        <h3 class="job-role">UI Developer & Designer</h3>
+                        <p class="about-p">Hi! I'm a <strong>UI Developer</strong> with almost 3 years of experience in
+                            Front-end Web Development, plus an Application Support Engineer for 3 year prior to
+                            Front-End
+                            Development. I also do <strong>Web Design</strong> depending on the needs of a certain
+                            project.
+                            You can check some of my design work at<a href="https://dribbble.com/kenballon"
+                                target="_blank" rel="noopener" class="hero-a-link standard"
+                                title="Dribbble Profile Link"> Dribble</a> and I
+                            post some work
+                            at<a href="https://www.behance.net/kenballon" target="_blank" rel="noopener"
+                                class="hero-a-link standard">
+                                Behance</a> too.</p>
+                        <a href="#services-id" class="btn btn-primary" id="how-help-btn">How Can I Help</a>
+                    </div>
+
                 </div>
-                <div class="hero-img-wrapper col-md-6">
+                <div class="hero-img-wrapper">
                     <img src="/Assets/profilepic.jpg" alt="" width="325" height="536">
                 </div>
             </div>
         </section>
 
-        <section class="container hero services" id="services-id">
-            <div class="hero-wrapper row">
+        <section class="hero services" id="services-id">
+            <div class="container hero-wrapper">
                 <div class="hero-text-wrapper mobile col-md-6">
                     <h2>Let's work together on your next project</h2>
                     <h4>Don't think of me as a freelancer, rather as part of your team. I'd like to work hands on with
@@ -72,15 +80,15 @@
                                 <h2 class="prev-h2-title">Netflix Clone</h2>
                                 <span class="date-class">Dec 2020</span>
                                 <p class="about-p">Built with Vanilla JS and fetching TMDB API for Data.</p>
-                                <p class="about-p">A Netflix Clone Mockup to strengthen knowledge and skills with JavaScript.</p>
+                                <p class="about-p">A Netflix Clone Mockup to strengthen knowledge and skills with
+                                    JavaScript.</p>
                                 <a href="https://netflix-web-mock.netlify.app/" target="_blank"
                                     rel="noopener noreferrer" class="btn btn-primary"
                                     title="Button that link to Zangle Product Page">Visit Page</a>
                             </div>
                         </div>
                         <div class="col-md-6 prev-work-img-right">
-                            <img src="/Assets/netflix-clone.png" alt="Zangle Previous Work Image" width="520"
-                                srcset="/Assets/prev-zangle-img-265.png 480w,
+                            <img src="/Assets/netflix-clone.png" alt="Zangle Previous Work Image" width="520" srcset="/Assets/prev-zangle-img-265.png 480w,
                             /Assets/netflix-clone.png 960w,
                             /Assets/netflix-clone.png 1440w,
                             /Assets/netflix-clone.png 1920w">
@@ -162,7 +170,8 @@
                                     in the industry for more than 10 years. They also have some
                                     <a href="https://www.quezoncityhouseandlot.com/"
                                         class="hero-a-link standard">website</a> that shows
-                                    their other work</p>
+                                    their other work
+                                </p>
                                 <p class="about-p">I designed this using Figma and was built using WordPress and
                                     Elementor Theme.</p>
                                 <a href="http://houseforsaleinquezoncity.com/" target="_blank" rel="noopener noreferrer"
@@ -183,8 +192,8 @@
                                     business. I decided to create a mockup design in Figma and built the page in
                                     Webflow. This is not a finish product yet.</p>
 
-                                <a href="https://shuttered-dreams-project.webflow.io/" target="_blank" rel="noopener noreferrer"
-                                    class="btn btn-primary">Visit Live Site</a>
+                                <a href="https://shuttered-dreams-project.webflow.io/" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-primary">Visit Live Site</a>
                             </div>
                         </div>
                         <div class="col-md-6 prev-work-img-right">

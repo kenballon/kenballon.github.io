@@ -14,7 +14,8 @@ sectionHeroObserver = new IntersectionObserver(
   sectionHeroOptions
 );
 sectionHeroObserver.observe(sectionOne);
-sectionProjOptions = { rootMargin: "-200px 0px 0px 0px" };
+
+sectionProjOptions = { rootMargin: "-300px 0px 0px 0px" };
 const sectionProject = document.querySelector(".hero.services");
 const sectionProjectObserver = new IntersectionObserver((projectView) => {
   projectView.forEach((prj) => {

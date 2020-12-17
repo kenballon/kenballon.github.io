@@ -11,7 +11,7 @@ $font-family: "Inter UI", "Poppins", Arial, sans-serif;
 $font-family-medium: "Eina03 Medium", "Poppins", Arial, sans-serif;
 $font-family-bold: "Eina03 Bold", "Poppins", Arial, sans-serif;
 $section-bg-color-light-blue: #f3fdff;
-$border-color-hero: #e91e63;
+$border-color-hero: #2758e9;
 $border-color-services: #edcbbe;
 $alt-link-color: #008aae;
 *,
@@ -63,6 +63,9 @@ body {
         background-color: transparent;
         color: $border-color-hero;
         border-color: $border-color-hero;
+
+        animation-name: fadeInUp;
+        animation-duration: 3.6s;
         &:hover {
             background-color: $border-color-hero;
             color: #fff;
@@ -80,7 +83,7 @@ body {
 }
 
 .section-in-view {
-    border: 20px solid transparent;
+    border: 15px solid transparent;
 
     &::before,
     &::after {
@@ -102,7 +105,7 @@ body {
     }
     &::after {
         border-width: 0;
-        border-bottom-width: calc(var(--body-border-width, 20px) * 1 / 1 + 0px);
+        border-bottom-width: calc(var(--body-border-width, 15px) * 1 / 1 + 0px);
     }
 }
 
@@ -152,23 +155,43 @@ body {
     }
 }
 
+.my-name {
+    animation: fadeInUp;
+    animation-duration: 1s;
+}
+.job-role {
+    margin-bottom: 1.875em;
+    opacity: .6;
+    animation: fadeInUp;
+    animation-duration: 3s;
+}
+
 .about-p {
     font-size: 1.188em;
     line-height: 1.5em;
     font-weight: 400;
     margin-bottom: 1em;
     opacity: 0.8;
+
+    animation: fadeInUp;
+    animation-duration: 3s;
 }
 
 .hero {
     position: relative;
+    display: grid;
+    place-items: center;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
+    max-width: 1024px;
+    margin: auto;    
     .hero-wrapper {
-        align-items: center;
+        display: grid;
+        place-items: center;
+        grid-template-columns: 70% 30%;
+        gap: 20px;
 
         .hero-text-wrapper {
+            width: 100%;
             h1 {
                 font-weight: 700;
                 font-size: 4.25em;
@@ -177,12 +200,20 @@ body {
                 line-height: 1.5em;
                 margin-bottom: 0.5em;
             }
+            .about-p{
+                max-width: 56.25ch;
+            }
         }
         .hero-img-wrapper {
+            animation-name: fadeInRight;
+            animation-duration: 3.5s;
+            width: 100%;
+            height: 300px;
             img {
-                float: right;
-                width: 418px;
+                float: right;                
                 object-fit: cover;
+                width: 100%;
+                height: 100%;
             }
         }
     }
@@ -192,6 +223,7 @@ body {
     position: relative;
     padding-top: 120px;
     align-items: baseline;
+    background-color: #fff7f4;
     h2 {
         font-size: 50px;
         font-weight: 500;
@@ -206,6 +238,7 @@ body {
         margin-bottom: 30px;
     }
     .hero-wrapper {
+        display: flex;
         .hero-img-wrapper {
             img {
                 object-fit: contain;
@@ -235,15 +268,15 @@ body {
             }
             .previous-work {
                 position: relative;
-                padding:20px 20px 55px 20px;
-                &:first-child{
+                padding: 20px 20px 55px 20px;
+                &:first-child {
                     padding-top: 50px !important;
                 }
                 .prev-work-detail {
                     position: relative;
                     display: flex;
                     align-items: center;
-                    .prev-h2-title {                        
+                    .prev-h2-title {
                         color: $alt-link-color;
                     }
                     .date-class {
@@ -373,11 +406,12 @@ footer {
     }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 374px) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
     .hero {
         .hero-wrapper {
+            grid-template-columns: 100%;            
             .hero-text-wrapper {
-                padding-top: 150px;
+                padding:25px;
                 h1 {
                     font-size: 2.813em;
                     line-height: 1.3em;
@@ -388,12 +422,7 @@ footer {
                 }
             }
             .hero-img-wrapper {
-                padding-left: 15px;
-                margin-top: 50px;
-                img {
-                    float: none;
-                    width: 100%;
-                }
+               display: none;
             }
 
             .hero-text-wrapper.mobile {
@@ -445,143 +474,4 @@ footer {
         }
     }
 }
-@media only screen and (min-width: 375px) and (max-width: 413px) {
-    .hero {
-        .hero-wrapper {
-            .hero-text-wrapper {
-                padding-top: 150px;
-                h1 {
-                    font-size: 2.813em;
-                    line-height: 1.3em;
-                }
-                .about-p {
-                    font-size: 1em;
-                    line-height: 2em;
-                }
-            }
-            .hero-img-wrapper {
-                padding-left: 15px;
-                margin-top: 50px;
-                img {
-                    float: none;
-                    width: 100%;
-                    height: 400px;
-                }
-            }
-            .hero-text-wrapper.mobile {
-                padding-top: 0;
-            }
-        }
-    }
-    .projects-section {
-        .projects-grid-wrapper {
-            .section-header {
-                h1 {
-                    font-size: 2.813em;
-                }
-            }
-            .prev-work-container-scroll {
-                .previous-work {
-                    .prev-work-img-right {
-                        img {
-                            width: 100%;
-                            margin-top: 30px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .prj-row {
-        margin-bottom: unset !important;
-    }
-    .experiences-seciton {
-        .experiences-grid-container {
-            #work-experience {
-                .blocks {
-                    display: flex;
-                    flex-flow: column;
-                    .experience-block {
-                        margin-bottom: 35px !important;
-                        text-align: center;
-                    }
-                }
-            }
-        }
-    }
-    .slim-wrapper {
-        h5 {
-            width: 100%;
-        }
-    }
-}
-@media only screen and (min-width: 414px) and (max-width: 812px) {
-    .hero {
-        .hero-wrapper {
-            .hero-text-wrapper {
-                padding-top: 150px;
-                h1 {
-                    font-size: 2.813em;
-                    line-height: 1.3em;
-                }
-                .about-p {
-                    font-size: 1em;
-                    line-height: 2em;
-                }
-            }
-            .hero-img-wrapper {
-                padding-left: 15px;
-                margin-top: 50px;
-                img {
-                    float: none;
-                    width: 100%;
-                    height: 400px;
-                }
-            }
-            .hero-text-wrapper.mobile {
-                padding-top: 0;
-            }
-        }
-    }
-    .projects-section {
-        .projects-grid-wrapper {
-            .section-header {
-                h1 {
-                    font-size: 2.813em;
-                }
-            }
-            .prev-work-container-scroll {
-                .previous-work {
-                    .prev-work-img-right {
-                        img {
-                            width: 100%;
-                            margin-top: 30px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .prj-row {
-        margin-bottom: unset !important;
-    }
-    .experiences-seciton {
-        .experiences-grid-container {
-            #work-experience {
-                .blocks {
-                    display: flex;
-                    flex-flow: column;
-                    .experience-block {
-                        margin-bottom: 35px !important;
-                        text-align: center;
-                    }
-                }
-            }
-        }
-    }
-    .slim-wrapper {
-        h5 {
-            width: 100%;
-        }
-    }
-}
+
