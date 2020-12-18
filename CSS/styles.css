@@ -158,7 +158,7 @@ body .hero-a-link:hover {
 
 .job-role {
   margin-bottom: 1.875em;
-  opacity: .6;
+  opacity: 0.6;
   -webkit-animation: fadeInUp;
           animation: fadeInUp;
   -webkit-animation-duration: 3s;
@@ -188,12 +188,13 @@ body .hero-a-link:hover {
 }
 
 .hero .hero-wrapper {
+  width: 100%;
   display: -ms-grid;
   display: grid;
   place-items: center;
   -ms-grid-columns: 70% 30%;
       grid-template-columns: 70% 30%;
-  gap: 20px;
+  gap: 5px;
 }
 
 .hero .hero-wrapper .hero-text-wrapper {
@@ -220,51 +221,58 @@ body .hero-a-link:hover {
   -webkit-animation-duration: 3.5s;
           animation-duration: 3.5s;
   width: 100%;
-  height: 300px;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .hero .hero-wrapper .hero-img-wrapper img {
   float: right;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
-  height: 100%;
+  width: 250px;
+  height: 250px;
 }
 
-.hero.services {
+.services {
   position: relative;
-  padding-top: 120px;
+  padding: 120px 0;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
   background-color: #fff7f4;
 }
 
-.hero.services h2 {
+.services h2 {
   font-size: 50px;
   font-weight: 500;
   margin-bottom: 30px;
 }
 
-.hero.services h4 {
+.services h4 {
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 30px;
 }
 
-.hero.services .about-p {
+.services .about-p {
   margin-bottom: 30px;
 }
 
-.hero.services .hero-wrapper {
+.services .hero-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.hero.services .hero-wrapper .hero-img-wrapper img {
+.services .hero-wrapper .hero-img-wrapper img {
   -o-object-fit: contain;
      object-fit: contain;
+  width: 100%;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .projects-section {
