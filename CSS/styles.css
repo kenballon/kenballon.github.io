@@ -48,8 +48,8 @@ body .btn-primary {
   font-family: "Inter UI", "Poppins", Arial, sans-serif;
   padding: 15px 40px;
   background-color: transparent;
-  color: #2758e9;
-  border-color: #2758e9;
+  color: #008aae;
+  border-color: #008aae;
   -webkit-animation-name: fadeInUp;
           animation-name: fadeInUp;
   -webkit-animation-duration: 3.6s;
@@ -57,13 +57,13 @@ body .btn-primary {
 }
 
 body .btn-primary:hover {
-  background-color: #2758e9;
+  background-color: #008aae;
   color: #fff;
-  border-color: #2758e9;
+  border-color: #008aae;
 }
 
 body .hero-a-link {
-  color: #2758e9;
+  color: #008aae;
 }
 
 body .hero-a-link:hover {
@@ -89,7 +89,7 @@ body .hero-a-link:hover {
   top: 0;
   border: inherit;
   border-bottom-width: 0;
-  border-color: #2758e9;
+  border-color: #008aae;
   will-change: border-color;
   -webkit-transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
   transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
@@ -107,7 +107,7 @@ body .hero-a-link:hover {
 }
 
 .section-services-scrolled::before, .section-services-scrolled::after {
-  border-color: #008aae;
+  border-color: #2758e9;
   -webkit-transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
   transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
 }
@@ -253,8 +253,8 @@ body .hero-a-link:hover {
       -ms-flex-positive: 1;
           flex-grow: 1;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #2758e9), color-stop(50%, transparent));
-  background: linear-gradient(to top, #2758e9 50%, transparent 50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #008aae), color-stop(50%, transparent));
+  background: linear-gradient(to top, #008aae 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: bottom left;
   -webkit-transition: all 0.5s ease-out;
@@ -472,7 +472,7 @@ body .hero-a-link:hover {
 }
 
 .projects-section .projects-grid-wrapper .prev-work-container-scroll .previous-work .prev-work-detail .prev-h2-title {
-  color: #008aae;
+  color: #2758e9;
 }
 
 .projects-section .projects-grid-wrapper .prev-work-container-scroll .previous-work .prev-work-detail .date-class {
@@ -519,7 +519,7 @@ body .hero-a-link:hover {
 .experiences-section .experiences-grid-container #work-experience .blocks .experience-block .company {
   font-family: "Inter UI", "Poppins", Arial, sans-serif;
   font-size: 20px;
-  color: #2758e9;
+  color: #008aae;
   line-height: 29px;
   font-weight: 600;
   margin: 0;

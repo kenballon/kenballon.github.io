@@ -11,9 +11,9 @@ $font-family: "Inter UI", "Poppins", Arial, sans-serif;
 $font-family-medium: "Eina03 Medium", "Poppins", Arial, sans-serif;
 $font-family-bold: "Eina03 Bold", "Poppins", Arial, sans-serif;
 $section-bg-color-light-blue: #f3fdff;
-$border-color-hero: #2758e9;
+$border-color-hero: #008aae;
 $border-color-services: #edcbbe;
-$alt-link-color: #008aae;
+$alt-link-color: #2758e9;
 $grey-var-1: #4d5154;
 $grey-var-2: #7a7c7f;
 $grey-var-3: #5a5a5a;
@@ -235,7 +235,7 @@ body {
         flex-grow: 1;
         height: 100%;
 
-        background: linear-gradient(to top, #2758e9 50%, transparent 50%);
+        background: linear-gradient(to top, #008aae 50%, transparent 50%);
         background-size: 100% 200%;
         background-position: bottom left;
         transition: all 0.5s ease-out;
