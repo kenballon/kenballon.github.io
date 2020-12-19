@@ -253,8 +253,8 @@ body .hero-a-link:hover {
       -ms-flex-positive: 1;
           flex-grow: 1;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #000), color-stop(50%, transparent));
-  background: linear-gradient(to top, #000 50%, transparent 50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #2758e9), color-stop(50%, transparent));
+  background: linear-gradient(to top, #2758e9 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: bottom left;
   -webkit-transition: all 0.5s ease-out;
@@ -281,12 +281,19 @@ body .hero-a-link:hover {
   background-image: none;
   -webkit-animation-name: fadeOutWelcomeText;
           animation-name: fadeOutWelcomeText;
-  -webkit-animation-duration: 3.2s;
-          animation-duration: 3.2s;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-transition: all ease-in-out;
   transition: all ease-in-out;
+}
+
+.logo-welcome .welcome-text {
+  font-size: 24px;
+  color: #fff;
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
 }
 
 @-webkit-keyframes fadeOutWelcomeText {
@@ -356,7 +363,12 @@ body .hero-a-link:hover {
           animation-delay: 3.2s;
 }
 
-.animate-duration-1s {
+.animate-duration-2s {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+.animate-duration-2s {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
 }

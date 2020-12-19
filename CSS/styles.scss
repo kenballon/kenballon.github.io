@@ -235,7 +235,7 @@ body {
         flex-grow: 1;
         height: 100%;
 
-        background: linear-gradient(to top, #000 50%, transparent 50%);
+        background: linear-gradient(to top, #2758e9 50%, transparent 50%);
         background-size: 100% 200%;
         background-position: bottom left;
         transition: all 0.5s ease-out;
@@ -257,9 +257,16 @@ body {
     background-image: none;
 
     animation-name: fadeOutWelcomeText;
-    animation-duration: 3.2s;
+    animation-duration: 3.5s;
     animation-fill-mode: forwards;
     transition: all ease-in-out;
+
+    .welcome-text{
+        font-size: 24px;
+        color: #fff;
+
+        animation-name: fadeInUp;        
+    }
 }
 
 @keyframes fadeOutWelcomeText {
@@ -276,9 +283,7 @@ body {
 /* animation keyframes */
 @keyframes zeroHeight {
     to {
-        visibility: hidden;
-        // width: 0;
-        // height: 0;
+        visibility: hidden;       
     }
 }
 
@@ -304,7 +309,11 @@ body {
     animation-delay: 3.2s;   
 }
 
-.animate-duration-1s {
+.animate-duration-2s {
+    animation-duration: 0.5s;
+}
+
+.animate-duration-2s {
     animation-duration: 0.5s;
 }
 
