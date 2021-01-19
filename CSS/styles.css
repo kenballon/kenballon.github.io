@@ -281,8 +281,8 @@ body .hero-a-link:hover {
   background-image: none;
   -webkit-animation-name: fadeOutWelcomeText;
           animation-name: fadeOutWelcomeText;
-  -webkit-animation-duration: 3.5s;
-          animation-duration: 3.5s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-transition: all ease-in-out;
@@ -303,6 +303,7 @@ body .hero-a-link:hover {
   to {
     opacity: 0;
     visibility: hidden;
+    width: 0;
   }
 }
 
@@ -313,6 +314,7 @@ body .hero-a-link:hover {
   to {
     opacity: 0;
     visibility: hidden;
+    width: 0;
   }
 }
 

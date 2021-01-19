@@ -257,7 +257,7 @@ body {
     background-image: none;
 
     animation-name: fadeOutWelcomeText;
-    animation-duration: 3.5s;
+    animation-duration: 4s;
     animation-fill-mode: forwards;
     transition: all ease-in-out;
 
@@ -276,6 +276,7 @@ body {
     to {
         opacity: 0;           
         visibility: hidden; 
+        width: 0;
     }
 }
 
