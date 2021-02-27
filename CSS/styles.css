@@ -650,6 +650,75 @@ footer .ftr-container .ftr-row .links ul li {
   .hero .hero-wrapper .hero-text-wrapper.mobile {
     padding-top: 0;
   }
+  .services .container.hero-wrapper {
+    display: block;
+  }
+  .services .container.hero-wrapper .hero-img-wrapper {
+    display: none;
+  }
+  .prj-row {
+    margin-bottom: unset !important;
+  }
+  .projects-section .projects-grid-wrapper .section-header h1 {
+    font-size: 2.813em;
+  }
+  .projects-section .projects-grid-wrapper .prev-work-container-scroll .previous-work .prev-work-img-right img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .experiences-seciton {
+    height: 100%;
+  }
+  .experiences-seciton .experiences-grid-container #work-experience .blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .experiences-seciton .experiences-grid-container #work-experience .blocks .experience-block {
+    text-align: center;
+    margin-bottom: 35px !important;
+  }
+  .slim-wrapper h5 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .hero .hero-wrapper {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .hero .hero-wrapper .hero-text-wrapper {
+    padding: 25px;
+  }
+  .hero .hero-wrapper .hero-text-wrapper h1 {
+    font-size: 2.813em;
+    line-height: 1.3em;
+  }
+  .hero .hero-wrapper .hero-text-wrapper .about-p {
+    font-size: 1em;
+    line-height: 2em;
+    max-width: 100%;
+  }
+  .hero .hero-wrapper .hero-img-wrapper {
+    display: none;
+  }
+  .hero .hero-wrapper .hero-text-wrapper.mobile {
+    padding-top: 0;
+  }
+  .services .container.hero-wrapper {
+    display: block;
+  }
+  .services .container.hero-wrapper .hero-text-wrapper.mobile.col-md-6 {
+    max-width: 100% !important;
+  }
+  .services .container.hero-wrapper .hero-img-wrapper {
+    display: none;
+  }
   .prj-row {
     margin-bottom: unset !important;
   }

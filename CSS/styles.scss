@@ -521,6 +521,7 @@ footer {
 @media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
     .hero {
         .hero-wrapper {
+            
             grid-template-columns: 100%;
             .hero-text-wrapper {
                 padding: 25px;
@@ -539,6 +540,100 @@ footer {
 
             .hero-text-wrapper.mobile {
                 padding-top: 0;
+            }
+        }
+    }
+
+    .services{
+        .container.hero-wrapper{
+            display: block;
+            .hero-img-wrapper{
+                display: none;
+            }
+        }
+    }
+
+    .prj-row {
+        margin-bottom: unset !important;
+    }
+    .projects-section {
+        .projects-grid-wrapper {
+            .section-header {
+                h1 {
+                    font-size: 2.813em;
+                }
+            }
+            .prev-work-container-scroll {
+                .previous-work {
+                    .prev-work-img-right {
+                        img {
+                            width: 100%;
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .experiences-seciton {
+        height: 100%;
+        .experiences-grid-container {
+            #work-experience {
+                .blocks {
+                    display: flex;
+                    flex-flow: column;
+                    .experience-block {
+                        text-align: center;
+                        margin-bottom: 35px !important;
+                    }
+                }
+            }
+        }
+    }
+    .slim-wrapper {
+        h5 {
+            width: 100%;
+        }
+    }
+}
+
+// ipad 
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .hero {
+        .hero-wrapper {
+            
+            grid-template-columns: 100%;
+            .hero-text-wrapper {
+                padding: 25px;
+                h1 {
+                    font-size: 2.813em;
+                    line-height: 1.3em;
+                }
+                .about-p {
+                    font-size: 1em;
+                    line-height: 2em;
+                    max-width: 100%;
+                }
+            }
+            .hero-img-wrapper {
+                display: none;
+            }
+
+            .hero-text-wrapper.mobile {
+                padding-top: 0;
+            }
+        }
+    }
+
+    .services{
+        .container.hero-wrapper{
+            display: block;
+            .hero-text-wrapper.mobile.col-md-6{
+                max-width: 100% !important;
+            }
+            .hero-img-wrapper{
+                display: none;
             }
         }
     }
