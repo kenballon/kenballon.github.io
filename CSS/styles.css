@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500 &display=swap");
-@import url("https://rsms.me/inter/inter-ui.css");
 @media screen and (min-width: 1024px) {
   html {
     scroll-behavior: smooth;
@@ -32,7 +30,7 @@ body h6,
 body p,
 body span,
 body li {
-  font-family: "Inter UI", "Poppins", Arial, sans-serif;
+  font-family: "Inter", "Poppins", Arial, sans-serif;
 }
 
 body li {
@@ -45,7 +43,7 @@ body a {
 }
 
 body .btn-primary {
-  font-family: "Inter UI", "Poppins", Arial, sans-serif;
+  font-family: "Inter", "Poppins", Arial, sans-serif;
   padding: 15px 40px;
   background-color: transparent;
   color: #008aae;
@@ -118,12 +116,12 @@ body .hero-a-link:hover {
   display: inline-block;
 }
 
-.standard::after {
+.standard::before {
   content: "";
   display: block;
   width: 20%;
   height: 8px;
-  background: #ffe4e1;
+  background: #ff5ee98f;
   opacity: 0;
   position: absolute;
   margin: auto;
@@ -137,7 +135,7 @@ body .hero-a-link:hover {
   z-index: -2;
 }
 
-.standard:hover::after {
+.standard:hover::before {
   opacity: 1;
   width: 100%;
 }
@@ -481,7 +479,6 @@ body .hero-a-link:hover {
 }
 
 .experiences-section .experiences-grid-container #work-experience .blocks .experience-block .company {
-  font-family: "Inter UI", "Poppins", Arial, sans-serif;
   font-size: 20px;
   color: #008aae;
   line-height: 29px;
@@ -546,7 +543,6 @@ footer .ftr-container .ftr-row h6 {
 footer .ftr-container .ftr-row h2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Averia Gruesa Libre, serif;
   color: #192735;
   text-decoration: none;
   font-size: 48px;

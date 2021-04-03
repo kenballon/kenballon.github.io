@@ -1,15 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500 &display=swap");
-@import url("https://rsms.me/inter/inter-ui.css");
-
 @media screen and(min-width: 1024px) {
     html {
         scroll-behavior: smooth;
     }
 }
 
-$font-family: "Inter UI", "Poppins", Arial, sans-serif;
-$font-family-medium: "Eina03 Medium", "Poppins", Arial, sans-serif;
-$font-family-bold: "Eina03 Bold", "Poppins", Arial, sans-serif;
+$font-family: "Inter", "Poppins", Arial, sans-serif;
 $section-bg-color-light-blue: #f3fdff;
 $border-color-hero: #008aae;
 $border-color-services: #edcbbe;
@@ -126,12 +121,12 @@ body {
     position: relative;
     padding-left: 3px;
     display: inline-block;
-    &::after {
+    &::before {
         content: "";
         display: block;
         width: 20%;
         height: 8px;
-        background: #ffe4e1;
+        background: #ff5ee98f;
         opacity: 0;
         position: absolute;
         margin: auto;
@@ -143,7 +138,7 @@ body {
         z-index: -2;
     }
     &:hover {
-        &::after {
+        &::before {
             opacity: 1;
             width: 100%;
         }
@@ -399,8 +394,7 @@ body {
                 padding-top: 50px;
                 padding-bottom: 100px;
                 .experience-block {
-                    .company {
-                        font-family: $font-family;
+                    .company {                        
                         font-size: 20px;
                         color: $border-color-hero;
                         line-height: 29px;
@@ -459,8 +453,7 @@ footer {
             }
             h2 {
                 margin-top: 0;
-                margin-bottom: 0;
-                font-family: Averia Gruesa Libre, serif;
+                margin-bottom: 0;                
                 color: #192735;
                 text-decoration: none;
                 font-size: 48px;
