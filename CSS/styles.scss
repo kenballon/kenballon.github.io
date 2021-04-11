@@ -182,7 +182,7 @@ body {
     display: grid;
     place-items: center;
     min-height: 100vh;
-    max-width: 1240px;
+    max-width: 1024px;
     margin-inline: auto;
     margin: auto;
     .hero-wrapper {
@@ -328,7 +328,7 @@ body {
     }
     .hero-wrapper {
         display: flex;
-        max-width: 1240px;
+        max-width: 1024px;
         padding-inline: 0;
         .hero-img-wrapper {
             position: relative;
@@ -345,7 +345,7 @@ body {
     position: relative;
     background-color: $section-bg-color-light-blue;
     .projects-grid-wrapper {
-        max-width: 1240px;
+        max-width: 1024px;
         margin-inline:auto;
         .section-header {
             h1 {
