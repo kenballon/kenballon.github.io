@@ -105,7 +105,7 @@ body .hero-a-link:hover {
 }
 
 .section-one-scrolled::before, .section-one-scrolled::after {
-  border-color: #ff3298;
+  border-color: #FF3366;
   -webkit-transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
   transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
 }
