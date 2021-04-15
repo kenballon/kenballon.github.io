@@ -66,6 +66,24 @@ body .btn-primary:hover {
   border-color: #008aae;
 }
 
+body .btn-secondary {
+  font-family: "Manrope", "Poppins", Arial, sans-serif;
+  padding: 15px 40px;
+  background-color: #FF3366;
+  color: white;
+  border-color: #FF3366;
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+  -webkit-animation-duration: 3.6s;
+          animation-duration: 3.6s;
+}
+
+body .btn-secondary:hover {
+  background-color: transparent;
+  color: #FF3366;
+  border-color: #FF3366;
+}
+
 body .hero-a-link {
   color: #008aae;
 }

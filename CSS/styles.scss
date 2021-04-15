@@ -71,6 +71,22 @@ body {
         }
     }
 
+    .btn-secondary {
+        font-family: $font-family;
+        padding: 15px 40px;
+        background-color: $border-color-services;
+        color: white;
+        border-color: $border-color-services;
+
+        animation-name: fadeInUp;
+        animation-duration: 3.6s;
+        &:hover {
+            background-color: transparent;
+            color:$border-color-services;
+            border-color: $border-color-services;
+        }
+    }
+
     .hero-a-link {
         color: $border-color-hero;
 
@@ -174,7 +190,6 @@ body {
     animation: fadeInUp;
     animation-duration: 3.5s;
 }
-
 
 
 .hero {
