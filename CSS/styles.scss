@@ -169,6 +169,7 @@ body {
 
 
 .reveal-text{
+    color:#003947;
     font-size: 6vw;
 }
 
@@ -327,7 +328,7 @@ body {
     position: relative;
     padding: 120px 0;
     align-items: baseline;
-    background-color: #fff7f4;
+    background-color: #fff7f9;
     h2 {
         font-size: 50px;
         font-weight: 500;
@@ -388,7 +389,7 @@ body {
                     display: flex;
                     align-items: center;
                     .prev-h2-title {
-                        color: $alt-link-color;
+                        color: $border-color-hero;
                     }
                     .date-class {
                         margin-bottom: 10px;
