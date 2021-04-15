@@ -112,7 +112,7 @@ body {
         top: 0;
         border: inherit;
         border-bottom-width: 0;
-        border-color: $border-color-hero;
+        border-color: #003947;
         will-change: border-color;
         transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
     }
@@ -133,7 +133,7 @@ body {
 .section-services-scrolled {
     &::before,
     &::after {
-        border-color: $alt-link-color;
+        border-color: #0bafcf;
         transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
     }
 }

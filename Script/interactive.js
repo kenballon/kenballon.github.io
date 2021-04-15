@@ -1,6 +1,7 @@
 const bodyBorderColor = document.querySelector('#main');
-const sectionOne = document.querySelector('.hero');
 
+// hero
+const sectionOne = document.querySelector('.hero');
 sectionHeroOptions = { rootMargin: '-300px 0px 0px 0px' };
 
 sectionHeroObserver = new IntersectionObserver(
@@ -17,8 +18,9 @@ sectionHeroObserver = new IntersectionObserver(
 );
 sectionHeroObserver.observe(sectionOne);
 
+// project section
 sectionProjOptions = { rootMargin: '-300px 0px 0px 0px' };
-const sectionProject = document.querySelector('.hero.services');
+const sectionProject = document.querySelector('.services');
 const sectionProjectObserver = new IntersectionObserver((projectView) => {
   projectView.forEach((prj) => {
     if (!prj.isIntersecting) {
@@ -34,3 +36,4 @@ const sectionProjectObserver = new IntersectionObserver((projectView) => {
   });
 }, sectionProjOptions);
 sectionProjectObserver.observe(sectionProject);
+

@@ -111,7 +111,7 @@ body .hero-a-link:hover {
   top: 0;
   border: inherit;
   border-bottom-width: 0;
-  border-color: #008aae;
+  border-color: #003947;
   will-change: border-color;
   -webkit-transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
   transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
@@ -129,7 +129,7 @@ body .hero-a-link:hover {
 }
 
 .section-services-scrolled::before, .section-services-scrolled::after {
-  border-color: #2758e9;
+  border-color: #0bafcf;
   -webkit-transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
   transition: border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1), border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1);
 }
