@@ -228,8 +228,8 @@ body .hero-a-link:hover {
 }
 
 .hero .hero-wrapper .hero-img-wrapper {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   display: -ms-grid;
   display: grid;
   place-items: center;
