@@ -430,19 +430,6 @@ body .hero-a-link:hover {
   font-size: 4.25em;
 }
 
-.projects-section .projects-grid-wrapper .prev-work-container-scroll {
-  height: 750px;
-  overflow-y: scroll;
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-}
-
-.projects-section .projects-grid-wrapper .prev-work-container-scroll::-webkit-scrollbar {
-  display: none;
-}
-
 .projects-section .projects-grid-wrapper .prev-work-container-scroll .previous-work {
   position: relative;
   padding: 20px 20px 55px;

@@ -372,13 +372,13 @@ body {
             }
         }
         .prev-work-container-scroll {
-            height: 750px;
-            overflow-y: scroll;
-            -ms-overflow-style: none; /* IE and Edge */
-            scrollbar-width: none; /* Firefox */
-            &::-webkit-scrollbar {
-                display: none;
-            }
+            // height: 750px;
+            // overflow-y: scroll;
+            // -ms-overflow-style: none; /* IE and Edge */
+            // scrollbar-width: none; /* Firefox */
+            // &::-webkit-scrollbar {
+            //     display: none;
+            // }
             .previous-work {
                 position: relative;
                 padding: 20px 20px 55px;
