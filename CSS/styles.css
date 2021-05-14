@@ -430,6 +430,10 @@ body .hero-a-link:hover {
   font-size: 4.25em;
 }
 
+.projects-section .projects-grid-wrapper .section-header .about-p {
+  width: 60ch;
+}
+
 .projects-section .projects-grid-wrapper .prev-work-container-scroll .previous-work {
   position: relative;
   padding: 20px 20px 55px;
