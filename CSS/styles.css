@@ -56,6 +56,8 @@ body .btn-primary {
   border-color: #008aae;
   -webkit-animation-name: fadeInUp;
           animation-name: fadeInUp;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
   -webkit-animation-duration: 3.6s;
           animation-duration: 3.6s;
 }
@@ -74,6 +76,8 @@ body .btn-secondary {
   border-color: #FF3366;
   -webkit-animation-name: fadeInUp;
           animation-name: fadeInUp;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
   -webkit-animation-duration: 3.6s;
           animation-duration: 3.6s;
 }
@@ -166,7 +170,13 @@ body .hero-a-link:hover {
 
 .reveal-text {
   color: #003947;
-  font-size: 4.500em;
+  font-size: 3em;
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-delay: 0.0s;
+          animation-delay: 0.0s;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
 }
 
 .job-role {
@@ -175,6 +185,8 @@ body .hero-a-link:hover {
   opacity: 0.8;
   -webkit-animation: fadeInUp;
           animation: fadeInUp;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
   -webkit-animation-duration: 3.5s;
           animation-duration: 3.5s;
 }
@@ -187,6 +199,8 @@ body .hero-a-link:hover {
   color: #5a5a5a;
   -webkit-animation: fadeInUp;
           animation: fadeInUp;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
   -webkit-animation-duration: 3.5s;
           animation-duration: 3.5s;
 }
@@ -230,8 +244,8 @@ body .hero-a-link:hover {
 }
 
 .hero .hero-wrapper .hero-img-wrapper {
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
   display: -ms-grid;
   display: grid;
   place-items: center;
