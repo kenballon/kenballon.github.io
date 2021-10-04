@@ -170,7 +170,7 @@ body .hero-a-link:hover {
 
 .reveal-text {
   color: #003947;
-  font-size: 3em;
+  font-size: 4.5em;
   -webkit-animation: fadeInUp;
           animation: fadeInUp;
   -webkit-animation-delay: 0.0s;
@@ -211,7 +211,7 @@ body .hero-a-link:hover {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  max-width: 1024px;
+  max-width: 1366px;
   margin-inline: auto;
   margin: auto;
 }
@@ -221,9 +221,9 @@ body .hero-a-link:hover {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  -ms-grid-columns: 70% 30%;
-      grid-template-columns: 70% 30%;
-  gap: 5px;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  gap: 25px;
 }
 
 .hero .hero-wrapper .hero-text-wrapper {
@@ -270,6 +270,8 @@ body .hero-a-link:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .hero .hero-wrapper .hero-img-wrapper .square-out::before {
