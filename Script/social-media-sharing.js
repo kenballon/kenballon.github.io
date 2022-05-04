@@ -13,6 +13,7 @@ const shareToLinkedIn = document.querySelector("#fb");
 
 shareToLinkedIn.addEventListener("click", () => {
   socialWindow(fbShareQueryPost, 570, 570);
+  navigator.clipboard.writeText(getCurrentURL).then(console.log(getCurrentURL))
 });
 
 function socialWindow(url, width, height) {
