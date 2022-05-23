@@ -8,12 +8,14 @@ const fbShareQueryPost = `https://www.facebook.com/sharer.php?u=${encodeCurrentU
 const TwitShareQueryPost = `https://twitter.com/intent/tweet?url=${encodeCurrentURL}&text=${pageTitle}`;
 const linkedInShareQueryPost = `https://www.linkedin.com/shareArticle?url=${encodeCurrentURL}&title=${pageTitle}&summary=${encodedPageDesc}&source=${pageTitle}`;
 const emailThisLink = `mailto:?subject=${pageTitle}&body=Read%20this%20article%20%22${pageTitle}%22%20on%20${getCurrentURL}`;
+navigator.clipboard.writeText(getCurrentURL).then(console.log(getCurrentURL)) // clipboard copy sharing
 
-const shareToLinkedIn = document.querySelector("#fb");
+// code here for getting the social media ids 
 
+// event listeners for click 
 shareToLinkedIn.addEventListener("click", () => {
   socialWindow(fbShareQueryPost, 570, 570);
-  navigator.clipboard.writeText(getCurrentURL).then(console.log(getCurrentURL))
+  
 });
 
 function socialWindow(url, width, height) {
