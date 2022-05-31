@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap");
 :root {
-  --ff-heading: 'Dm Serif display', serif;
-  --ff-body: 'Inter', sans-serif;
+  --ff-heading: "Dm Serif display", serif;
+  --ff-body: "Inter", sans-serif;
   /* Type Scaling*/
   --fs-100: 1rem;
   --fs-200: 1.25rem;
@@ -34,8 +34,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -161,6 +161,11 @@ header nav {
 }
 
 .hero {
+  background-image: url("/Assets/profilepic.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh - 5rem);
   display: -ms-grid;
   display: grid;
   place-content: center;
