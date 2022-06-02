@@ -74,12 +74,7 @@ a:not([class]) {
 }
 
 a {
-  color: var(--clr-5);
   text-decoration: none;
-}
-
-a:hover {
-  color: var(--clr-4);
 }
 
 /* Make images easier to work with */
@@ -599,13 +594,6 @@ ul li {
   background-color: var(--clr-1);
   color: var(--clr-3);
   padding: 8px 15px;
-  -webkit-transition: background-color 0.2s ease-in;
-  transition: background-color 0.2s ease-in;
-}
-
-.btn:hover {
-  background-color: var(--clr-2);
-  color: var(--clr-1);
 }
 
 /*#endregion UTILITY CLASSES */
@@ -632,16 +620,10 @@ header nav {
   padding-inline: 15px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
 }
 
 .header.scrolled-y {
-  background-color: rgba(51, 51, 51, 0.569);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  background-color: #333;
 }
 
 .header.scrolled-y > * {
@@ -649,13 +631,61 @@ header nav {
 }
 
 .hero {
-  background-color: #999d9e;
   width: 100%;
+<<<<<<< HEAD
   height: 400px;
+=======
+  height: calc(100vh - 5rem);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  grid-auto-flow: column;
+  -webkit-column-gap: 2%;
+          column-gap: 2%;
+>>>>>>> parent of b1fbef7 (update)
 }
 
-.hero > * {
-  color: #fff;
+.hero .hero__left-col {
+  width: 75ch;
+}
+
+@media screen and (max-width: 768px) {
+  .hero .hero__left-col {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .hero .hero__left-col {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.hero .hero__right-col img {
+  width: 100%;
+  border-radius: 32px;
+}
+
+@media screen and (max-width: 1080px) {
+  .hero .hero__right-col {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 #routes-container {
