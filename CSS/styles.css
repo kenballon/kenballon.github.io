@@ -651,10 +651,25 @@ header nav {
 .hero {
   background-color: #999d9e;
   width: 100%;
-  height: calc(100vh - 5rem);
+  height: 400px;
 }
 
 .hero > * {
+  color: #fff;
+}
+
+#routes-container {
+  background-color: var(--clr-4);
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */

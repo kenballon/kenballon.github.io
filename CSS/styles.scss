@@ -664,8 +664,18 @@ header {
 .hero {
     background-color: #999d9e;
     width: 100%;
-    height: calc(100vh - 5rem);
+    // height: calc(100vh - 5rem);
+    height: 400px;
     &>* {
         color: #fff;
     }
+}
+
+#routes-container {
+    background-color: var(--clr-4);
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
