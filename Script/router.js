@@ -21,7 +21,7 @@ const initRouting = () => {
             description: "",
         },
         "/": {
-            template: "/index.html",
+            template: "/templates/index.html",
             title: "",
             description: "",
         },
