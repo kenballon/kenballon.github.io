@@ -2,18 +2,565 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenneth Ballon | UI/UX Desinger & Developer</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="UI Developer, UI Designer" />
+    <title>Kenneth Ballon</title>
+    <link rel="shortcut icon" href="/Assets/favicon.png" />
+    <!-- boostrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="/CSS/styles.css" />
+
+    <!-- fonts from google  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <style>
+        html {
+            font-family: 'Manrope';
+        }
+    </style>
+    <!-- animate.css library  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- JS for border  -->
+    <script src="/Script/interactive.js" defer></script>
 </head>
 
-<body>
-    <div class="container">
-        <h1>site under construction</h1>
-        <h4>Kenneth Ballon Portofolio Website</h4>
-    </div>
-</body>
+<body id="main" class="section-in-view">
+    <main class="main-container">
+        <section class="hero">
+            <div class="hero-wrapper">
+                <div class="hero-text-wrapper">
+                    <div>
+                        <h1 class="reveal-text">Hi, my name is <br> Kenneth Ballon</h1>
+                        <h3 class="job-role">Product Designer, Front-End Developer, and Portrait Photographer</h3>
+                        <p class="about-p">
+                            I'm a currently working at <a
+                            href="https://www.behance.net/kenballon"
+                            target="_blank"
+                            rel="noopener"
+                            class="hero-a-link standard"
+                            title="Key Media Website">Key Media</a> as their Digital Product Designer. Some of my design shots can be found at <a href="https://dribbble.com/kenballon" target="_blank" rel="noopener" class="hero-a-link standard" title="Dribbble Profile Link">
+                              Dribble</a
+                            >
+                            and I post some work at<a
+                              href="https://www.behance.net/kenballon"
+                              target="_blank"
+                              rel="noopener"
+                              class="hero-a-link standard"
+                              title="Behance Profile Link"
+                            >
+                              Behance</a
+                            >
+                            too
+                            .As I am much of a designer, I also love developing UI and I have built frontend UI using HTML5, CSS3, JavaScript, VueJS and WordPress. 
+              </p>
+              <a
+                href="#project-section-id"
+                alt="Outlook"
+                class="btn btn-primary"
+                id="how-help-btn"
+                >Work</a
+              >
 
+              <a
+                href="./Assets/Technical Resume 2021.pdf"
+                class="btn btn-secondary"
+                target="_blank"
+                >Résumé</a
+              >
+            </div>
+          </div>
+          <div class="hero-img-wrapper">
+            <div class="square-out">
+              <img
+                src="/Assets/profilepic.jpg"
+                alt=""
+                width="325"
+                height="536"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services-id">
+        <div class="container hero-wrapper">
+          <div class="hero-text-wrapper mobile col-md-6">
+            <h2>Let's work together on your next project</h2>
+            <h4>
+              Don't think of me as a freelancer, rather as part of your team.
+              I'd like to work hands on with all my clients and integrate
+              seamlessly into your workflow.
+            </h4>
+            <p class="about-p">
+              I'll help you create a design for Web Pages and also build it that
+              meets modern web standards without sacrificing site performance.
+            </p>
+            <a
+              href="#project-section-id"
+              class="btn btn-secondary"
+              id="prev-work-btn"
+              >Previous Work</a
+            >
+          </div>
+          <div class="hero-img-wrapper col-md-6">
+            <img
+              src="/Assets/ipad-wedding.png"
+              alt="hero"
+              width="325"
+              height="536"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-section" id="project-section-id">
+        <div class="projects-grid-wrapper container">
+          <div class="section-header">
+            <h1 class="col-md-8">Previous Projects</h1>
+            <p class="about-p">Some of the work that I did in my previous company will not be visible here. </p>
+            <p class="about-p">My style can be defined as neat and minimalist. Often the technologies I used are HTML5, CSS3, Sass, JavaScript and some VueJS Framework. I design with Figma or Adobe XD.</p>
+            <hr style="margin-bottom: 20px;">
+          </div>
+
+          <!-- Cards for Recent and Previous Work  -->
+          <div class="prev-work-container-scroll">
+
+            <div class="previous-work row">
+              <div class="col-md-6 prev-work-detail">
+                <div>
+                  <h2 class="prev-h2-title">Blogging Mock Website with VueJS, Tailwind CSS and Firebase</h2>
+                  <span class="date-class">May 28 - Present, 2021</span>
+                  <p class="about-p">
+                   <span style="color: #FF3366"><strong>In-progess.</strong></span>This website is a mock of Studio McGee where it has blog features. The goal for this mockup is to build this site with VueJS and the backend would be Firebase. I will also use <span><a href="https://quilljs.com/" target="_blank">quill</a></span>
+                            for the rich text feature for posting blog.
+                        </p>
+                        <p class="about-p">
+                            Built with VueJS and connected it to Firebase.
+                        </p>
+                        <p class="about-p">
+                            ROLE: Design and Development.
+                        </p>
+                        <a href="https://studiomcgee-vue-mock.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" title="Button that link to Task List App">Visit Page</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6 prev-work-img-right">
+                <img
+                  src="/Assets/Studio McGee.png"
+                  alt="Zangle Previous Work Image"
+                  width="520"
+                  srcset="
+                    /Assets/Studio McGee.png  480w,
+                    /Assets/Studio McGee.png 960w,
+                    /Assets/Studio McGee.png 1440w,
+                    /Assets/Studio McGee.png 1920w
+                  "
+                />
+              </div>
+            </div>
+
+            <div class="previous-work row">
+              <div class="col-md-6 prev-work-detail">
+                <div>
+                  <h2 class="prev-h2-title">To Do List with VueJS and Firebase</h2>
+                  <span class="date-class">May 10-14, 2021</span>
+                  <p class="about-p">
+                    This is a simple VueJS App that you can add task or to do list which connects to Firebase. You can add, update, delete and double click the task to indicate a sort reminder of the task.
+                  </p>
+                  <p class="about-p">
+                    Built with VueJS and connected it to Firebase.
+                  </p>
+                  <p class="about-p">
+                    ROLE: Design and Development.
+                  </p>
+                  <a
+                    href="https://vuejs-task.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary"
+                    title="Button that link to Task List App"
+                    >Visit Page</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6 prev-work-img-right">
+                <img
+                  src="/Assets/task-app.png"
+                  alt="Zangle Previous Work Image"
+                  width="520"
+                  srcset="
+                    /Assets/prev-zangle-img-265.png  480w,
+                    /Assets/task-app.png 960w,
+                    /Assets/task-app.png 1440w,
+                    /Assets/task-app.png 1920w
+                  "
+                />
+              </div>
+            </div>
+
+            <div class="previous-work row">
+              <div class="col-md-6 prev-work-detail">
+                <div>
+                  <h2 class="prev-h2-title">Netflix Clone</h2>
+                  <span class="date-class">Dec 2020</span>
+                  <p class="about-p">
+                    Built with Vanilla JS, HTML5, CSS3/Sass. The features were built using fetch API Call to TMDB API for Data such as the title and images of movies.
+                  </p>
+                  <p class="about-p">
+                    ROLE: Design and Development.
+                  </p>
+                  <a
+                    href="https://netflixmockup.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary"
+                    title="Button that link to Zangle Product Page"
+                    >Visit Page</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6 prev-work-img-right">
+                <img
+                  src="/Assets/netflix-clone.png"
+                  alt="Zangle Previous Work Image"
+                  width="520"
+                  srcset="
+                    /Assets/prev-zangle-img-265.png  480w,
+                    /Assets/netflix-clone.png        960w,
+                    /Assets/netflix-clone.png       1440w,
+                    /Assets/netflix-clone.png       1920w
+                  "
+                />
+              </div>
+            </div>
+
+            <div class="previous-work row">
+              <div class="col-md-6 prev-work-detail">
+                <div>
+                  <h2 class="prev-h2-title">Zangle Official</h2>
+                  <span class="date-class">Sep 2020</span>
+                  <p class="about-p">
+                    Built a <strong>Shopify Custom UI Product Page</strong> for
+                    Zangle which user can order a custom Album Cover artwork as
+                    well as their favorite song and artist. User can also search
+                    songs from Spotify made possible through API Request. This
+                    automatically store songs and album cover image through a
+                    hidden input fields for the order to go through.
+                  </p>
+                  <p class="about-p">
+                    <span style="color: #FF3366"><strong>UPDATE:</strong></span> Their site has been retired. The link has been updated to my preview prototype. Just click on the Shop button to route you to the product page.
+                  </p>
+                  <p class="about-p">
+                    ROLE: Design and Development.
+                  </p>
+                  <a
+                    href="https://pretty-fix-ph.myshopify.com/?_ab=0&_bt=eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaUJ3Y21WMGRIa3RabWw0TFhCb0xtMTVjMmh2Y0dsbWVTNWpiMjBHT2daRlZBPT0iLCJleHAiOiIyMDIxLTA2LTAzVDAzOjU2OjE1LjU0MloiLCJwdXIiOiJwZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzIn19--2a4a5629402b0ba8fbb984eff5af1348d4231d32&_fd=0&_sc=1&key=2560fc19d1144ed925078e34c2aeb760893d8e8ae18d4d6aa4e939c07ec095e7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary"
+                    title="Button that link to Zangle Product Page"
+                    >Visit Product Page</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6 prev-work-img-right">
+                <img
+                  src="/Assets/prev-zangle-img-265.png"
+                  alt="Zangle Previous Work Image"
+                  width="520"
+                  srcset="
+                    /Assets/prev-zangle-img-265.png  480w,
+                    /Assets/prev-zangle-img-520.png  960w,
+                    /Assets/prev-zangle-img-520.png 1440w,
+                    /Assets/prev-zangle-img-520.png 1920w
+                  "
+                />
+              </div>
+            </div>
+
+            <div class="previous-work row">
+              <div class="col-md-6 prev-work-detail">
+                <div>
+                  <h2 class="prev-h2-title">Architecture Mag</h2>
+                  <span class="date-class">Sep 2019</span>
+                  <p class="about-p">
+                    A design challenge to build Web Page using Webflow.
+                  </p>
+                  <p class="about-p">
+                    ROLE: Design and Development.
+                  </p>
+                  <a
+                    href="https://archipro.webflow.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary"
+                    title="Button that link to Webflow Mockup"
+                    >Visit Webflow Site</a
+                  >
+
+                </div>
+              </div>
+              <div class="col-md-6 prev-work-img-right">
+                <img
+                  src="/Assets/archimag-520.png"
+                  alt="Zangle Previous Work Image"
+                />
+              </div>
+            </div>
+
+            <div class="previous-work row">
+              <div class="col-md-6 prev-work-detail">
+                <div>
+                  <h2 class="prev-h2-title">The Creative Composite UK</h2>
+                  <span class="date-class">Feb - Apr 2019</span>
+                  <p class="about-p">
+                    This website provides guide and marketing strategy to
+                    various Dentist to get more client in their respective area
+                    in the U.K.
+                  </p>
+                  <p class="about-p">
+                    I built the Web UI with WordPress and Elegant Theme Plugin
+                    (a.ka. Divi Theme). Other UI that can’t be handled by the
+                    theme was built in jQuery.
+                  </p>
+                  <p class="about-p">
+                    ROLE: Development.
+                  </p>
+                  <a
+                    href="https://www.thecreativecomposite.co.uk/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary"
+                    >Visit Live Site</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6 prev-work-img-right">
+                <img
+                  src="/Assets/the-creative-co-520.png"
+                  alt="Zangle Previous Work Image"
+                />
+              </div>
+            </div>
+
+            <div class="previous-work row">
+              <div class="col-md-6 prev-work-detail">
+                <div>
+                  <h2 class="prev-h2-title">Great Empire Realty</h2>
+                  <span class="date-class">June - July 2019</span>
+                  <p class="about-p">
+                    This website showcases some townhouses built by Great Empire
+                    Realty. They’ve been in the industry for more than 10 years.
+                    They also have some
+                    <a
+                      href="https://www.quezoncityhouseandlot.com/"
+                      class="hero-a-link standard"
+                      >website</a
+                    >
+                    that shows their other work
+                  </p>
+                  <p class="about-p">
+                    I designed this using Figma and was built using WordPress
+                    and Elementor Theme.
+                  </p>
+                  <p class="about-p">
+                    ROLE: Design and Development.
+                  </p>
+                  <a
+                    href="https://empirecity.ph/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary"
+                    >Visit Live Site</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6 prev-work-img-right">
+                <img
+                  src="/Assets/greate-empire-520.png"
+                  alt="Zangle Previous Work Image"
+                />
+              </div>
+            </div>
+
+            <div class="previous-work row">
+              <div class="col-md-6 prev-work-detail">
+                <div>
+                  <h2 class="prev-h2-title">
+                    Shuttered Dreams Project Webflow Mockup
+                  </h2>
+                  <span class="date-class">Sep 2019</span>
+                  <p class="about-p">
+                    SDP was planning to build a website for their Wedding
+                    Photography business. I decided to create a mockup design in
+                    Figma and built the page in Webflow. This is not a finish
+                    product yet.
+                  </p>
+                  <p class="about-p">
+                    ROLE: Design and Development.
+                  </p>
+
+                  <a
+                    href="https://shuttered-dreams-project.webflow.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary"
+                    >Visit Live Site</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6 prev-work-img-right">
+                <img
+                  src="/Assets/sdp-mock-520.png"
+                  alt="Zangle Previous Work Image"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- cursor to experience list  -->
+          <div
+            style="
+              text-align: center;
+              cursor: pointer;
+              height: 80px;
+              margin-top: 30px;
+            "
+          >
+          
+          </div>
+        </div>
+      </section>
+
+      <section class="experiences-section container">
+        <div class="experiences-grid-container">
+          <div class="container slim-wrapper">
+            <h5 id="experience-header">
+              I have almost 6 years of combined experience in support and
+              front-end development
+            </h5>
+          </div>
+
+          <div id="work-experience" class="container">
+            <div class="content">
+              <div class="blocks">
+                <div class="experience-block">
+                  <a
+                    class="company"
+                    href="https://barhead.com/"
+                    target="_blank"
+                    rel="noopener"
+                    >Barhead Solutions</a
+                  >
+                  <p class="title">Technical Consultant / UI Developer</p>
+                  <p class="date">Jan 2020 - Sep 2020</p>
+                </div>
+                <div class="experience-block">
+                  <a class="company" href="#project-section-id"
+                    >Freelance WordPress Dev</a
+                  >
+                  <p class="title">Product Designer and Developer</p>
+                  <p class="date">Feb - Dec 2019</p>
+                </div>
+                <div class="experience-block">
+                  <a
+                    class="company"
+                    href="https://www.accenture.com/ph-en"
+                    target="_blank"
+                    rel="noopener"
+                    >Accenture</a
+                  >
+                  <p class="title">Front End Developer</p>
+                  <p class="date">Sep 2017 - Jan 2019</p>
+                </div>
+                <div class="experience-block">
+                  <a
+                    class="company"
+                    href="https://www.accenture.com/ph-en"
+                    target="_blank"
+                    rel="noopener"
+                    >Accenture</a
+                  >
+                  <p class="title">Application Support Engineer</p>
+                  <p class="date">Nov 2014 - Aug 2017</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="ftr-container container">
+        <div class="ftr-row row">
+          <div class="ftr-left col-md-6">
+            <h6>DON'T BE A STRANGER</h6>
+            <h2>Let's connect</h2>
+          </div>
+          <div class="links col-md-6">
+            <ul>
+              <li>
+                <a
+                  href="https://dribbble.com/kenballon"
+                  alt="Dribbble"
+                  target="_blank"
+                  rel="noopener"
+                  >Dribbble</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/kenneth-ballon-12a11738/"
+                  alt="Linkedin"
+                  target="_blank"
+                  rel="noopener"
+                  >Linkedin</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/user/12147296925"
+                  alt="Spotify"
+                  target="_blank"
+                  rel="noopener"
+                  >Spotify</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/KennethBallon"
+                  alt="Medium"
+                  target="_blank"
+                  rel="noopener"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/heyken.design/"
+                  alt="Linkedin"
+                  target="_blank"
+                  rel="noopener"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:kenneth_ballon@live.com"
+                  alt="Outlook"
+                  rel="noopener"
+                  >Email Me</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
