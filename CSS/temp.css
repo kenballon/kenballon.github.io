@@ -1,9 +1,15 @@
 body {
     background-color: #e5e5f7;
-    opacity: 0.8;
-    background-image: radial-gradient(#444cf7 0.75px, #e5e5f7 0.75px);
+    background-image: radial-gradient(#444cf7 0.75px, #e5e5f7 0.25px);
     background-size: 15px 15px;
     text-wrap: pretty;
+}
+
+main.container {
+    background-image: url('/Assets/undraw_portfolio_update_re_jqnp.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: 50% 10%;
 }
 
 .hero\:blurb {
