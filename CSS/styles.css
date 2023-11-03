@@ -20,7 +20,6 @@
 }
 
 body {
-  color: white;
   text-wrap: pretty;
   background-color: #1b1b1b;
   overscroll-behavior: none;
@@ -254,6 +253,7 @@ video#video-player::-webkit-media-controls {
 /* #region PROJECT SECTION CSS STYLING */
 
 .project-section {
+  color: white;
   background-color: #153243b4;
   padding-block: 10rem;
   overflow: hidden;
