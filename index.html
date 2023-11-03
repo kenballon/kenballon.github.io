@@ -2,40 +2,202 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kenneth Ballon a UI Developer and UI/UX Designer based in Philippines" />
-  <title>Kenneth Ballon</title>
-  <link rel="shortcut icon" href="/Assets/favicon.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenneth Ballon - UIUX Designer and Frontend Developer</title>
 
+  <!-- custom css styling -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <script type="module" src="/scripts/app.js" defer></script>
   <!-- tailwind css -->
-  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
-
-  <!-- fonts from google  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <!-- fontshare fonts -->
-  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@1,2&display=swap" rel="stylesheet">
-
-  <!-- custom css -->
-  <link rel="stylesheet" href="/CSS/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-  <main class="container mx-auto h-screen">
-    <div class="site-under-constructions h-full flex flex-col items-center justify-center">
-      <h1
-        class="text-6xl capitalize font-semibold text-center p-6 bg-white mb-4 rounded box-shadow-primary text-gray-800">
-        I'm cooking something new</h1>
-      <p class="text-2xl text-center hero:blurb rounded box-shadow-primary text-gray-700">Apologies, this site is under
-        rebuild process. For the main time, I created a
-        quick
-        webflow portfolio site
-        here: <a href="https://kenneth-ballon.webflow.io/" target="_blank">Portfolio Link</a></p>
-    </div>
+  <div id="mouse-follow-blob"></div>
+
+  <div class="_line-separator">
+    <div class="separator"></div>
+    <div class="separator"></div>
+    <div class="separator"></div>
+  </div>
+  <header>
+    <nav></nav>
+  </header>
+  <main>
+    <section class="container" id="hero-section">
+      <div class="hero__container">
+        <div class="hero__headline">
+          <span>Hello, my name is Kenneth Ballon. And I am a UI UX Designer & Frontend Developer</span>
+          <h1 class="split-heading-word">Site Under heavy redesign</h1>
+          <span>This is only frontend functionality and no routing yet as I planned to build this with Nuxt3</span>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="about">
+      <div class="about__container flex items-center justify-center">
+        <div class="about-paragraph">
+          <p class="split-heading">I Integrate, Collaborate, and Challenge. I am
+            a digital native embracing the creative freedom to produce solutions that connect, communitcate,
+            and inspire.</p>
+        </div>
+      </div>
+    </section>
+    <section class="flex justify-center" id="video-section">
+      <div class="sticky">
+        <video autoplay loop muted controls="0" id="video-player">
+          <source src="/assets/videos/Port Sites-1.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="container relative">
+        <div class="section-headline-wrapper">
+          <h2 class="leading-snug split-heading">What I delivered to my clients and some experimental
+            projects
+          </h2>
+        </div>
+
+
+        <div class="project-div-wrapper relative">
+          <div class="proj-preview-container">
+            <div class="preview-img"></div>
+          </div>
+          <div class="project-list-container relative">
+            <div class="project-table-header flex">
+              <div class="proj-header-col">
+                <h4>Project</h4>
+              </div>
+              <div class="proj-header-col">
+                <h4>Location</h4>
+              </div>
+              <div class="proj-header-col">
+                <h4>Services</h4>
+              </div>
+              <div class="proj-header-col">
+                <h4>Year</h4>
+              </div>
+            </div>
+            <ul class="projects-ul-list">
+              <li class="project-list-item" id="p1">
+                <a href="https://www.insurancebusinessmag.com/us/" target="_blank">
+                  <div class="li-div-wrapper flex items-center">
+                    <div class="project-list__div-col">
+                      <h5 class="prj-li__div-col-child __heading">
+                        <span class="pill">Insurance Business Magazine</span>
+                      </h5>
+                    </div>
+                    <div class="project-list__div-col">
+                      <p class="prj-li__div-col-child">United Kingdom</p>
+                    </div>
+                    <div class="project-list__div-col">
+                      <p class="prj-li__div-col-child">Design & Development</p>
+                    </div>
+                    <div class="project-list__div-col">
+                      <p class="prj-li__div-col-child">2023</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="project-list-item" id="p2">
+                <a href="https://premium.brokernews.com.au/au-2023-exclusivefeature-pepper-money-leads-the-industry-with-innovation/p/1"
+                  target="_blank">
+                  <div class="li-div-wrapper flex items-center">
+                    <div class="project-list__div-col">
+                      <h5 class="prj-li__div-col-child __heading">
+                        <span class="pill">IB Magazine Specialty Pages</span>
+                      </h5>
+                    </div>
+                    <div class="project-list__div-col">
+                      <p class="prj-li__div-col-child">Multiple Locations</p>
+                    </div>
+                    <div class="project-list__div-col">
+                      <p class="prj-li__div-col-child">Design</p>
+                    </div>
+                    <div class="project-list__div-col">
+                      <p class="prj-li__div-col-child">2021</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="project-list-item" id="p3">
+                <a href="https://wremedia.com/" target="_blank">
+                  <div class="li-div-wrapper flex items-center">
+                    <div class="project-list__div-col">
+                      <h5 class="prj-li__div-col-child __heading">
+                        <span class="pill">Washington Real Estate Media</span>
+                      </h5>
+                    </div>
+                    <div class="project-list__div-col">
+                      <p class="prj-li__div-col-child">USA</p>
+                    </div>
+                    <div class="project-list__div-col">
+                      <p class="prj-li__div-col-child">Development</p>
+                    </div>
+                    <div class="project-list__div-col">
+                      <p class="prj-li__div-col-child">2020</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="project-list-item" id="p4">
+                <a href="https://www.improveyourtomorrow.org/_files/ugd/2c3514_0af40ad8f4624066816f1af5b256171e.pdf"
+                  target="_blank">
+                  <div class="li-div-wrapper flex items-center">
+                    <div class="project-list__div-col">
+                      <h5 class="prj-li__div-col-child __heading">
+                        <span class="pill">IYT School Annual Report PDF Design</span>
+                      </h5>
+                    </div>
+                    <div class="project-list__div-col">
+                      <p class="prj-li__div-col-child">USA</p>
+                    </div>
+                    <div class="project-list__div-col">
+                      <p class="prj-li__div-col-child">Design</p>
+                    </div>
+                    <div class="project-list__div-col">
+                      <p class="prj-li__div-col-child">2020</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="project-list-item" id="p5">
+                <a href="https://netflixmockup.netlify.app/" target="_blank">
+                  <div class="li-div-wrapper flex items-center">
+                    <div class="project-list__div-col">
+                      <h5 class="prj-li__div-col-child __heading">
+                        <span class="pill">Netflix Mockup with Vanilla Javascript</span>
+                      </h5>
+                    </div>
+                    <div class="project-list__div-col">
+                      <p class="prj-li__div-col-child">Philippines</p>
+                    </div>
+                    <div class="project-list__div-col">
+                      <p class="prj-li__div-col-child">Design & Development</p>
+                    </div>
+                    <div class="project-list__div-col">
+                      <p class="prj-li__div-col-child">2019</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- tailwind modal here -->
+
   </main>
+  <footer>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
 </body>
 
 </html>
