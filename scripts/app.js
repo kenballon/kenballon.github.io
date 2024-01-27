@@ -156,4 +156,4 @@ function fireClick() {
   setInterval(simulateClick, 20000);
 }
 
-// fireClick();
+fireClick();
