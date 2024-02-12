@@ -20,7 +20,7 @@ gsap.registerPlugin(ScrollTrigger);
 const smoothScrolling = () => {
   const lenis = new Lenis();
 
-  lenis.on("scroll", (e) => {});
+  lenis.on("scroll", (e) => { });
 
   function raf(time) {
     lenis.raf(time);
@@ -129,9 +129,6 @@ function fireClick() {
         element.dispatchEvent(event);
       }
       const currentTime = new Date().toLocaleTimeString();
-      console.log(
-        `Simulated click at (${mouseX}, ${mouseY}) at ${currentTime}`
-      );
     }
   }
 
@@ -156,4 +153,4 @@ function fireClick() {
   setInterval(simulateClick, 20000);
 }
 
-fireClick();
+// fireClick();
