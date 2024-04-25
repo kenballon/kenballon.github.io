@@ -134,9 +134,9 @@ body {
   }
 } */
 
-.skills__list-item{
+.skills__list-item {
   font-size: 0.75rem;
-  padding:0.75rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   background-color: rgb(218, 238, 219);
   border-radius: 40px;
 }
@@ -165,7 +165,12 @@ section {
   display: flex;
   flex-direction: column;
   place-content: center;
-  height: min-content;
+  height: calc(var(--height-100vh) - 40px);
+
+  @media screen and (max-width: 750px) {
+    height: 100svh;
+    padding: 1rem;
+  }
 }
 
 .hero__container {
@@ -183,9 +188,13 @@ section {
     text-transform: uppercase;
 
     & h1 {
-      font-size: clamp(2rem, 20cqi, 8rem);
+      font-size: 8rem;
       overflow: hidden;
       line-height: 1.2em;
+
+      @media screen and (max-width: 750px){
+        font-size: 2rem;
+      }
     }
   }
 
@@ -203,6 +212,11 @@ section {
     max-width: 450px;
     margin-inline: auto;
     border-radius: 8px;
+
+    @media screen and (max-width: 750px) {
+      width: 100%;
+      position: relative;
+    }
   }
 }
 
@@ -464,7 +478,6 @@ video#video-player::-webkit-media-controls {
 }
 
 /* #endregion PROJECT SECTION CSS STYLING */
-
 
 @keyframes fadeIn {
   from {
