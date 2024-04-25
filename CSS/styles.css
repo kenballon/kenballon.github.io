@@ -1,8 +1,8 @@
 @import "/CSS/_utility.css";
 
 :root {
-  --ff-primary: "Neue Montreal", serif;
-  --ff-secondary: "PP Radio Grotesk", sans-serif;
+  --ff-primary: "Inter", sans-serif;
+  --ff-secondary: "Manrope", sans-serif;
 
   /* width */
   --max-w: 1440px;
