@@ -1,220 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kenneth Ballon - UIUX Designer and Frontend Developer</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kenneth Ballon - UIUX Designer and Frontend Developer</title>
+    <!-- custom css styling -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script type="module" src="scripts/app.js" defer></script>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        touch-action: none;
+      }
 
-  <!-- custom css styling -->
-  <link rel="stylesheet" href="CSS/styles.css">
-  <script type="module" src="scripts/app.js" defer></script>
-  <!-- tailwind css -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      touch-action: none;
-    }
+      canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
 
-    canvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-    }
+      .dg.ac {
+        display: none !important;
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-    .dg.ac {
-      display: none !important;
-    }
-  </style>
-</head>
+  <body>
+    <div id="mouse-follow-blob"></div>
 
-<body>
-  <div id="mouse-follow-blob"></div>
-
-  <div class="page">
-    <div class="_line-separator">
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-    </div>
-    <header>
-      <nav></nav>
-    </header>
-    <main>
-      <section class="container" id="hero-section">
-        <div class="hero__container">
-          <div class="hero__headline">
-            <span>Hello, my name is Kenneth Ballon. And I am a UI UX Designer & Frontend Developer</span>
-            <h1 class="split-heading-word">Site Under redesign</h1>
-            <span style="font-size: 32px;margin:auto;display: block;max-width: 600px;">Planning to build with Nuxt3 Soon. But for now you can scroll down.</span>
-          </div>
-        </div>
-      </section>
-      <section class="container" id="about">
-        <div class="about__container flex items-center justify-center">
-          <div class="about-paragraph">
-            <p class="split-heading">I Integrate, Collaborate, and Challenge. I am embracing the creative freedom to
-              produce solutions that connect, communitcate,
-              and inspire.</p>
-          </div>
-        </div>
-      </section>
-      <section class="flex justify-center" id="video-section">
-        <div class="sticky">
-          <video autoplay loop muted controls="0" id="video-player">
-            <source src="Assets/videos/RIA Connect Proj.mp4" type="video/mp4">
-          </video>
-        </div>
-      </section>
-
-      <section class="project-section">
-        <div class="container relative mx-auto">
-          <div class="section-headline-wrapper">
-            <h2 class="leading-snug split-heading">What I delivered to my clients and some experimental
-              projects
-            </h2>
-          </div>
-
-
-          <div class="project-div-wrapper relative">
-            <div class="proj-preview-container">
-              <div class="preview-img"></div>
+    <div class="page">
+      <div class="_line-separator">
+        <div class="separator"></div>
+        <div class="separator"></div>
+        <div class="separator"></div>
+      </div>
+      <header>
+        <nav></nav>
+      </header>
+      <main>
+        <section class="mx-auto flex" id="hero-section">
+          <div class="hero__container container w-lg-[1440px] mx-auto relative">
+            <div class="hero__headline mix_blend absolute z-10 w-full">
+              <h1 class="split-heading-word">Hello! My name is Kenneth</h1>
             </div>
-            <div class="project-list-container relative">
-              <div class="project-table-header flex">
-                <div class="proj-header-col">
-                  <h4>Project</h4>
-                </div>
-                <div class="proj-header-col">
-                  <h4>Location</h4>
-                </div>
-                <div class="proj-header-col">
-                  <h4>Services</h4>
-                </div>
-                <div class="proj-header-col">
-                  <h4>Year</h4>
+            <div class="hero_img_wrapper relative min-h-[564px]">
+              <img
+                class="default_shown"
+                src="/Assets/images/kenneth-ballon-profile.jpg"
+                alt="kenneth ballon profile photo"
+              />
+              <img
+                class="shown_above"
+                src="/Assets/images/kenneth-ballon-profile.jpg"
+                alt="kenneth ballon profile photo"
+              />
+            </div>
+
+            <div class="subheadline mt-4">
+              <p class="text-2xl">
+                I specialize in UI/UX Design, but I am also a Front-End
+                Developer.
+              </p>
+              <p
+                class="text-xl uppercase max-w-[500px] mx-auto mt-5 bg-yellow-100 p-3"
+              >
+                I am currently in-progress of redesigning my portfolio site. I
+                ask for your patience.
+              </p>
+            </div>
+
+            <div class="skills_wrapper">
+              <div class="skills__container">
+                <div class="skills__list container flex justify-center gap-4 flex-wrap">
+                  <div class="skills__list-item">
+                    <h4>UI/UX Design</h4>
+                  </div>                 
+                  <div class="skills__list-item">
+                    <h4>HTML</h4>
+                  </div>
+                  <div class="skills__list-item">
+                    <h4>CSS</h4>
+                  </div>
+                  <div class="skills__list-item">
+                    <h4>JavaScript</h4>
+                  </div>
+                  <div class="skills__list-item">
+                    <h4>Vue JS</h4>
+                  </div>
+                  <div class="skills__list-item">
+                    <h4>PHP</h4>
+                  </div>
+                  <div class="skills__list-item">
+                    <h4>Webflow</h4>
+                  </div>
+                  <div class="skills__list-item">
+                    <h4>Shopify</h4>
+                  </div>
+                  <div class="skills__list-item">
+                    <h4>Shopify Liquid Script</h4>
+                  </div>
+                  <div class="skills__list-item">
+                    <h4>WordPress</h4>
+                  </div>
                 </div>
               </div>
-              <ul class="projects-ul-list">
-                <li class="project-list-item" id="p1">
-                  <a href="https://riaconnectny.com/" target="_blank">
-                    <div class="li-div-wrapper flex items-center">
-                      <div class="project-list__div-col">
-                        <h5 class="prj-li__div-col-child __heading">
-                          <span class="pill">RIA Connect New York</span>
-                        </h5>
-                      </div>
-                      <div class="project-list__div-col">
-                        <p class="prj-li__div-col-child">United States of America</p>
-                      </div>
-                      <div class="project-list__div-col">
-                        <p class="prj-li__div-col-child">Design & Development</p>
-                      </div>
-                      <div class="project-list__div-col">
-                        <p class="prj-li__div-col-child">2023 - 2024</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="project-list-item" id="p2">
-                  <a href="https://www.insurancebusinessmag.com/us/" target="_blank">
-                    <div class="li-div-wrapper flex items-center">
-                      <div class="project-list__div-col">
-                        <h5 class="prj-li__div-col-child __heading">
-                          <span class="pill">Insurance Business Magazine</span>
-                        </h5>
-                      </div>
-                      <div class="project-list__div-col">
-                        <p class="prj-li__div-col-child">United Kingdom</p>
-                      </div>
-                      <div class="project-list__div-col">
-                        <p class="prj-li__div-col-child">Design & Development</p>
-                      </div>
-                      <div class="project-list__div-col">
-                        <p class="prj-li__div-col-child">2023</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="project-list-item" id="p3">
-                  <a href="https://premium.brokernews.com.au/au-2023-exclusivefeature-pepper-money-leads-the-industry-with-innovation/p/1"
-                    target="_blank">
-                    <div class="li-div-wrapper flex items-center">
-                      <div class="project-list__div-col">
-                        <h5 class="prj-li__div-col-child __heading">
-                          <span class="pill">IB Magazine Specialty Pages</span>
-                        </h5>
-                      </div>
-                      <div class="project-list__div-col">
-                        <p class="prj-li__div-col-child">Multiple Locations</p>
-                      </div>
-                      <div class="project-list__div-col">
-                        <p class="prj-li__div-col-child">Design</p>
-                      </div>
-                      <div class="project-list__div-col">
-                        <p class="prj-li__div-col-child">2021</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="project-list-item" id="p4">
-                  <a href="https://kenbee-vueblog.netlify.app/" target="_blank">
-                    <div class="li-div-wrapper flex items-center">
-                      <div class="project-list__div-col">
-                        <h5 class="prj-li__div-col-child __heading">
-                          <span class="pill">Vue 3 | Mockup Blog</span>
-                        </h5>
-                      </div>
-                      <div class="project-list__div-col">
-                        <p class="prj-li__div-col-child">Philippines</p>
-                      </div>
-                      <div class="project-list__div-col">
-                        <p class="prj-li__div-col-child">Design & Development</p>
-                      </div>
-                      <div class="project-list__div-col">
-                        <p class="prj-li__div-col-child">2023</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="project-list-item" id="p5">
-                  <a href="https://netflixmockup.netlify.app/" target="_blank">
-                    <div class="li-div-wrapper flex items-center">
-                      <div class="project-list__div-col">
-                        <h5 class="prj-li__div-col-child __heading">
-                          <span class="pill">Netflix Mockup with Vanilla Javascript</span>
-                        </h5>
-                      </div>
-                      <div class="project-list__div-col">
-                        <p class="prj-li__div-col-child">Philippines</p>
-                      </div>
-                      <div class="project-list__div-col">
-                        <p class="prj-li__div-col-child">Design & Development</p>
-                      </div>
-                      <div class="project-list__div-col">
-                        <p class="prj-li__div-col-child">2019</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
+        </section>
+        <section class="container" id="about">
+          <div class="about__container flex items-center justify-center mx-auto">
+            <div class="about-paragraph">
+              <p class="split-heading">
+                I help integrate diverse expertise, collaborates across teams, and challenges the norms of producing compelling user experiences that connect, communicate, and inspire through creative and user-centric solutions.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="container" style="padding-block:4rem;">
+          <h2 class="text-4xl text-center uppercase">Highlight Reel</h2>
         </div>
-      </section>
-      <!-- tailwind modal here -->
+        <section class="flex justify-center" id="video-section">
+          <div class="sticky">
+            <video autoplay loop muted controls="0" id="video-player">
+              <source
+                src="Assets/videos/Highligh Reel.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </section>
 
-    </main>
-    <footer>
+        <section class="project-section">
+          <div class="container relative mx-auto">
+            <div class="section-headline-wrapper">
+              <h2 class="leading-snug split-heading">
+                What I delivered to my clients and some experimental projects
+              </h2>
+            </div>
 
-    </footer>
-  </div>
+            <div class="project-div-wrapper relative">
+              <div class="proj-preview-container">
+                <div class="preview-img"></div>
+              </div>
+              <div class="project-list-container relative">
+                <div class="project-table-header flex">
+                  <div class="proj-header-col">
+                    <h4>Project</h4>
+                  </div>
+                  <div class="proj-header-col">
+                    <h4>Location</h4>
+                  </div>
+                  <div class="proj-header-col">
+                    <h4>Services</h4>
+                  </div>
+                  <div class="proj-header-col">
+                    <h4>Year</h4>
+                  </div>
+                </div>
+                <ul class="projects-ul-list">
+                  <li class="project-list-item" id="p1">
+                    <a href="https://riaactivate.com/" target="_blank">
+                      <div class="li-div-wrapper flex items-center">
+                        <div class="project-list__div-col">
+                          <h5 class="prj-li__div-col-child __heading">
+                            <span class="pill">RIA Activate | NY</span>
+                          </h5>
+                        </div>
+                        <div class="project-list__div-col">
+                          <p class="prj-li__div-col-child">
+                            United States of America
+                          </p>
+                        </div>
+                        <div class="project-list__div-col">
+                          <p class="prj-li__div-col-child">
+                            Design & Development
+                          </p>
+                        </div>
+                        <div class="project-list__div-col">
+                          <p class="prj-li__div-col-child">2023 - 2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="project-list-item" id="p2">
+                    <a
+                      href="https://www.insurancebusinessmag.com/us/"
+                      target="_blank"
+                    >
+                      <div class="li-div-wrapper flex items-center">
+                        <div class="project-list__div-col">
+                          <h5 class="prj-li__div-col-child __heading">
+                            <span class="pill"
+                              >Insurance Business Magazine</span
+                            >
+                          </h5>
+                        </div>
+                        <div class="project-list__div-col">
+                          <p class="prj-li__div-col-child">United Kingdom</p>
+                        </div>
+                        <div class="project-list__div-col">
+                          <p class="prj-li__div-col-child">
+                            Design & Development
+                          </p>
+                        </div>
+                        <div class="project-list__div-col">
+                          <p class="prj-li__div-col-child">2023</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="project-list-item" id="p3">
+                    <a
+                      href="https://premium.brokernews.com.au/au-2023-exclusivefeature-pepper-money-leads-the-industry-with-innovation/p/1"
+                      target="_blank"
+                    >
+                      <div class="li-div-wrapper flex items-center">
+                        <div class="project-list__div-col">
+                          <h5 class="prj-li__div-col-child __heading">
+                            <span class="pill"
+                              >IB Magazine Specialty Pages</span
+                            >
+                          </h5>
+                        </div>
+                        <div class="project-list__div-col">
+                          <p class="prj-li__div-col-child">
+                            Multiple Locations
+                          </p>
+                        </div>
+                        <div class="project-list__div-col">
+                          <p class="prj-li__div-col-child">Design</p>
+                        </div>
+                        <div class="project-list__div-col">
+                          <p class="prj-li__div-col-child">2021</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="project-list-item" id="p4">
+                    <a
+                      href="https://kenbee-vueblog.netlify.app/"
+                      target="_blank"
+                    >
+                      <div class="li-div-wrapper flex items-center">
+                        <div class="project-list__div-col">
+                          <h5 class="prj-li__div-col-child __heading">
+                            <span class="pill">Vue 3 | Mockup Blog</span>
+                          </h5>
+                        </div>
+                        <div class="project-list__div-col">
+                          <p class="prj-li__div-col-child">Philippines</p>
+                        </div>
+                        <div class="project-list__div-col">
+                          <p class="prj-li__div-col-child">
+                            Design & Development
+                          </p>
+                        </div>
+                        <div class="project-list__div-col">
+                          <p class="prj-li__div-col-child">2023</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="project-list-item" id="p5">
+                    <a
+                      href="https://pawsome-felines.netlify.app/"
+                      target="_blank"
+                    >
+                      <div class="li-div-wrapper flex items-center">
+                        <div class="project-list__div-col">
+                          <h5 class="prj-li__div-col-child __heading">
+                            <span class="pill"
+                              >Vue 3 | Cat Breed Web App</span
+                            >
+                          </h5>
+                        </div>
+                        <div class="project-list__div-col">
+                          <p class="prj-li__div-col-child">Philippines</p>
+                        </div>
+                        <div class="project-list__div-col">
+                          <p class="prj-li__div-col-child">
+                            Design & Development
+                          </p>
+                        </div>
+                        <div class="project-list__div-col">
+                          <p class="prj-li__div-col-child">2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- tailwind modal here -->
+      </main>
+      <footer></footer>
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://unpkg.com/split-type"></script>
-  <!-- <script src="/scripts/main.min.js"></script> -->
-</body>
-
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <!-- <script src="/scripts/main.min.js"></script> -->
+  </body>
 </html>

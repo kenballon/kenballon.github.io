@@ -153,4 +153,15 @@ function fireClick() {
   setInterval(simulateClick, 20000);
 }
 
-// fireClick();
+$(document).ready(function() {
+  $('.hero__container').hover(
+      function() { // mouseenter
+          $('.default_shown').css('display', 'none');
+          $('.shown_above').css('display', 'block');
+      },
+      function() { // mouseleave
+          $('.default_shown').css('display', 'block');
+          $('.shown_above').css('display', 'none');
+      }
+  );
+});
