@@ -202,10 +202,6 @@ section {
     mix-blend-mode: difference;
     color: black;
     filter: invert(100%);
-
-    & h1 {
-      -webkit-text-stroke: 0.5px beige;
-    }
   }
 
   .hero_img_wrapper img {
